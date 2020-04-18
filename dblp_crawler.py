@@ -1,21 +1,24 @@
 # -*- coding: utf-8 -*-
+import argparse
+import html
+import os.path
+import pickle
 import urllib.request
-import xmltodict
-from time import sleep
-from tqdm import tqdm
 from os import remove, rename
 from os.path import exists
-import os.path
-from util import read_csv, write_csv, copy_dic
+from time import sleep
+
 import unidecode
-import html
-import argparse
-import pickle
+import xmltodict
+from tqdm import tqdm
+
+from util import copy_dic, read_csv, write_csv
 
 
 def sanitize_text(text):
     text = unidecode.unidecode(html.unescape(text.decode('ascii')))
     return text.replace("&", " ")
+
 
 class Cache(object):
     def __init__(self, path='data/.cache_queries'):
@@ -34,7 +37,7 @@ class Cache(object):
         self.backup_ctr += 1
         if self.backup_ctr % 100 == 0 or force:
             self.backup()
-            with  open(self.path, "wb") as f:
+            with open(self.path, "wb") as f:
                 pickle.dump(self, f, -1)
 
     @classmethod
@@ -70,6 +73,7 @@ class Cache(object):
 
 cache = Cache.load('data/.cache_queries')
 
+
 def save_cache():
     cache.backup_and_save(True)
 
@@ -93,7 +97,8 @@ def request_dblp(query):
 
         except urllib.error.HTTPError as err:
             if err.code == 429:
-                print("HTTP error code", err.code, "reason:", err.reason, "will wait:", err.headers['Retry-After'])
+                print("HTTP error code", err.code, "reason:", err.reason,
+                      "will wait:", err.headers['Retry-After'])
                 wait = int(err.headers['Retry-After'])
                 sleep(wait + 10)
                 num_retries -= 1
@@ -139,7 +144,7 @@ def sanitize_coauthors(authors):
             bad_authors = False
     if bad_authors:
         return ["".join(authors)]
-    
+
     for author in authors:
         if isinstance(author, str):
             sanitized_authors.append(author)
@@ -171,11 +176,12 @@ def read_pub(pub_xml):
             'authors': authors}
 
 
-#http://dblp.uni-trier.de/rec/rdf/conf/isca/KannanGGS17.rdf
+# http://dblp.uni-trier.de/rec/rdf/conf/isca/KannanGGS17.rdf
 def request_publication(key):
     xmldict = request_dblp('rec/bibtex/%s.xml' % key)
     rdfdict = request_dblp('rec/rdf/%s.rdf' % key)
     return xmldict, rdfdict
+
 
 def request_publications(author_key):
     pubs = []
@@ -240,13 +246,15 @@ def build_paper_csv(pub_list, authors, whitelist):
     write_csv(pub_list, schema, csv)
 
 
-def get_paper_list(author_keys, year):
+def get_paper_list(author_keys, year, id_min, id_max):
     author_keys = read_csv(author_keys, ['first_name', 'last_name',
                                          'key', 'valid', 'key_link'])
     authors = {}
     # Adding authors with multiple keys
     for entry in author_keys:
         idx = entry['id']
+        if not(idx >= id_min and idx <= id_max):
+            continue
         if idx not in authors and entry['valid']:
             authors[idx] = {}
             copy_dic(entry, authors[idx], ['first_name', 'last_name'])
@@ -309,6 +317,13 @@ def main():
                         default=2012,
                         help="Last acceptable year for"
                         "collaboration without conflict")
+    parser.add_argument("--id_min", type=int,
+                        default=0,
+                        help="min id for author id loop")
+    parser.add_argument("--id_max", type=int,
+                        default=1000,
+                        help="max id for author id loop")
+
 
     # These optaions are not implemented yet
     parser.add_argument("--pc-conflicts",
@@ -341,7 +356,9 @@ def main():
         check_arg(args.paper_list, "No paper list passed")
 
         authors = get_paper_list(args.author_keys,
-                                 args.co_author_year)
+                                 args.co_author_year,
+                                 args.id_min,
+                                 args.id_max)
         # build_paper_csv(args.paper_list, authors, args.drop_conf_whitelist)
         build_paper_csv(args.paper_list, authors, True)
 
@@ -352,6 +369,7 @@ def main():
         for k, v in papers_dic.items():
             print(k)
             print(v)
+
 
 if __name__ == '__main__':
     main()
