@@ -127,7 +127,7 @@ TBA
 ## ADD MORE INSTITUTIONS FROM ttt.csv
 Run
 ```
-python3 institutions.py data/institutions.csv ttt.csv
+python3 institutions.py data/institutions.csv ttt.csv > replaceout
 ```
-hit y and enter, if you want to add it (correct guess)
-hit n and enter, if you don't
+Then look at replaceout to see what the script did. Correct what you think need corrected, in either ttt.csv or institutions.csv
+THIS OVERWRITES data/institutions.csv

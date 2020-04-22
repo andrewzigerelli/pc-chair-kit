@@ -69,6 +69,14 @@ def check_institutes(inst_file, ttt_file):
                       (already_there, new))
                 #save_obj(inst_lines, 'inst_lines')
                 break
+            else:
+                # let's just try to add it
+                print("added: %-100s\n" % u)
+                #save_obj(inst_lines, 'inst_lines')
+                new_line_no = len(inst_lines)
+                inst_lines.append(u)
+                inst2line[u] = new_line_no
+                break
         # already_unknown.append(u)
         #save_obj(already_unknown, 'already_unknown')
     with open(inst_file, 'w') as f:
