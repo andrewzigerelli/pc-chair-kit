@@ -123,3 +123,11 @@ TBA
 
 ## COIs for TOT Award.
 TBA
+
+## ADD MORE INSTITUTIONS FROM ttt.csv
+Run
+```
+python3 institutions.py data/institutions.csv ttt.csv
+```
+hit y and enter, if you want to add it (correct guess)
+hit n and enter, if you don't
