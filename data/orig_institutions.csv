@@ -5,12 +5,11 @@ ARM,ARM Holdings,ARM Research,Arm Inc.,Arm,Arm Inc
 ASU,Arizona State,Arizona State University,
 Ajou University
 Mei University
-TOBB university,TOBB
-Yale University,Yale
+TOBB university
+Yale University
 University of Arizona
-University of Kent,Kent
-University of Twente
-University of Utah,Utah,U. of Utah
+University of Kent
+University of Utah,Utah
 University of Iowa
 IT University of Copenhagen
 BSC,Barcelona Supercomputing Center,Barcelona Supercomputing Center - BSC
@@ -37,14 +36,13 @@ Columbia,Columbia University
 Cyprus,University of Cyprus,U. Cyprus
 Connecticut,Uniersity of Connecticut,U Connecticut,Univ. of Connecticut
 Cornell,Cornell University
-Drexel University,Drexel
+Drexel University
 Duke,Duke University
 Asoka University
-Nagoya University
 Edinburgh,University of Edinburgh,U. Edinburgh,U. of Edinburgh
 EPFL
 ETH,ETHZ,ETH Zurich,ETH Zürich,ETH-Zurich
-Facebook,Facebook Research,Facebook/NYU,NYU,Facebook and NYU
+Facebook,Facebook Research,Facebook/NYU,NYU
 Florida,University of Florida,U of Florida,Univ of Florida,Univ. of Florida
 Fujitsu
 Ghent,Ghent University,Ghen,Ghent University - UGent,UGent,University of Ghent
@@ -54,13 +52,13 @@ George Mason University
 Georgetown University
 Washington State University
 Google,Google/Berkeley,Google/UC Berkeley
-Harvard,Harvard University,Saarland University,Saarland
+Harvard,Harvard University,Saarland University
 HP,Hewlett Packard,Hewlett Packard Enterprise, Hewlett Packard Labs,HP Labs,Hewlett-Packard
 Houston,University of Houston
 Huawei,Huawei Technologies
 IDA
 IBM,IBM Research,IBM T. J. Watson Research Center
-IISc,Indian Institute of Science,IISc. India, Indian Institute of Sciences,Indian Institute of Sciences,Indian Institute of Science; Bangalore,IISc Bangalore
+IISc,Indian Institute of Science,IISc. India, Indian Institute of Sciences,Indian Institute of Sciences,Indian Institute of Science; Bangalore
 IIT,Indian Institute of Technology,Indian Institute of Technology Kanpur,Indian Institute of Technology; Chennai
 INRIA,IRISA/INRIA 2015,Inria
 IFLYTECH,IFLYTEK
@@ -103,8 +101,6 @@ PNNL,Pacific Northwest National Labs,Pacific Northwest National Laboratory,Pacif
 Princeton,Princeton University
 Rice University,Rice
 Beihang University
-Zhejiang University
-Peking University
 Purdue,Purdue University,Radboud University
 Qualcomm,Qualcomm Research,qualcomm
 RDA, RDA Microelectronics
@@ -144,7 +140,7 @@ University of California Merced,UC Merced
 University of California; Irvine,University of California-Irvine
 University of California; Davis
 UCLA,University of California Los Angeles,University of California; Los Angeles
-UCSB,University of California Santa Barbara,UC Santa Barbara,UC; Santa Barbara,UC Santa Barbara/Alibaba,UCSB/Alibaba,Alibaba
+UCSB,University of California Santa Barbara,UC Santa Barbara,UC; Santa Barbara,UC Santa Barbara/Alibaba,UCSB/Alibaba
 UCSD,University of California San Diego,UC San Diego,U.C. San Diego,UC-San Diego,University of California; San Diego
 UCSC,University of California Santa Cruz,UC Santa Cruz,University of California; Santa Cruz
 UCR,University of California Riverside,UC Riverside,UC-Riverside,UC; Riverside,University of California at Riverside,University of California; Riverside
@@ -156,7 +152,7 @@ MTU,Michigan Tech University,Michigan Tech,Michigan Tech. Univ.,Univ. of Michiga
 Rhode Island,University of Rhode Island
 Rutgers,University of Rutgers,Rutgers University,University of Tehran
 USC,University of Southern California
-UVA,Virginia,University of Virginia,UVa,The University of Virginia,U. Virginia,University of Virgina
+UVA,Virginia,University of Virginia,UVa,The University of Virginia,U. Virginia
 UPC,UPC Barcelona,Universitat Politecnica de Catalunya,Universitat Politècnica de Catalunya, Barcelona Supercomputing Center, BSC,UPC/BSC,Universitat Polit??cnica de Catalunya
 Uppsala,Uppsala University
 UT Austin,University of Texas Austin,All The University of Texas at Austin,Austin,Texas at Austin,The University of Texas at Austin,UT-Austin,University of Texas - Austin,University of Texas at Austin,University of Texas-Austin,Univ. of Texas; Austin
@@ -166,7 +162,7 @@ Vanderbilt,Vanderbilt University
 VMware,UT Austin/VMware,VMWare
 WashU,Washington University of St. Louis,Washington University St. Louis,Washington St. Louis,Washington University at St. Louis,Washington University in St. Louis,U of Washington,Univ. of Washington
 Wisconsin,University of Wisconsin Madison,University of Wisconsin, UW Madison,UW Madison,UW-Madison,University Wisconsin,University of Wisconsin - Madison,University of Wisconsin - Madison; 2020,University of Wisconsin -Madison,University of Wisconsin--Madison,University of Wisconsin-Madison,University of Wisconsin; Madison,U Wisconsin,U of Wisconsin,Univ of Wisconsin; Madison,Univ. of Wisconsin,University of Wisconsin - La Crosse
-William and Mary,College of William and Mary,William & Mary,Collage of Willaim and Marry,College of W&M,W&M,College W&M
+William and Mary,College of William and Mary,William & Mary,Collage of Willaim and Marry,College of W&M,W&M
 WD,Western Digital,Western Digital Co
 Washington,UW,University of Washington,University of Washington/AMD,Washington University,U Washington,U. Washington
 Vencore,Vencore Labs

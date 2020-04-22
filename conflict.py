@@ -130,6 +130,11 @@ class BaseConflicts(object):
         self.institutions = ConflictSet()
         self.insts = institution
         self.bad_data = False
+        # handle empty collaborators, which is passed as empty
+        # list 
+        if isinstance(collaborators_str, list):
+            if not collaborators_str:
+                collaborators_str=""
         lines = collaborators_str.strip().splitlines()
         for line in lines:
             name, institution = parse_line(line)
