@@ -6,8 +6,6 @@ from string import ascii_letters
 
 
 def cleanup(filename):
-    print(ascii_letters)
-    exit()
     asciis = ascii_letters + ' .-'
     ### DEFINE SPECIAL CHARS HERE
     special_chars = asciis
