@@ -5,39 +5,81 @@ import re
 from string import ascii_letters
 
 
+def translate(name, trans_dict, legal_chars):
+    new_name = ''
+    print(name)
+    for char in name:
+        if char not in legal_chars:
+            try:
+                new_name += trans_dict[char]
+            except:
+                print('Need to known translation of %s\n' % char)
+                print("What should it be? Enter it:\n")
+                choice = input()
+                trans_dict[char] = choice.strip()
+                save_obj(trans_dict, 'translation_dict')
+                raise Exception('Run script again')
+        else:
+            new_name += char
+    return new_name
+
+
+def fix_backwards(name):
+    return 'FIX ME' + name
+
+
 def cleanup(filename):
+    try:
+        trans_dict = load_obj('translation_dict')
+    except:
+        print('You need translation_dict.pkl in the cleanup.py directory.')
+        # add some defaults
+        trans_dict = {"'": "" }
+    print(trans_dict)
     asciis = ascii_letters + ' .-'
-    ### DEFINE SPECIAL CHARS HERE
-    special_chars = asciis
+    # DEFINE SPECIAL CHARS HERE
+    legal_chars = asciis
     to_check = {}
     check_pc_names = {}
     check_collab_names = {}
     susp_1 = re.compile(".*,.*")
 
-
     def isascii(s): return len(s) == len(s.encode())
-    with open(filename, encoding='mac_roman') as csvfile:
+    with open(filename, encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile)
         for pc in reader:
             pc_name = pc['first'] + pc['last']
-            if set(pc_name).difference(special_chars):
+            if set(pc_name).difference(legal_chars):
                 check_pc_names[pc['']] = pc_name
             isBad = False
             non_ascii = False
             bad_collabs = []
             non_ascii_list = []
             collaborators = pc['collaborators'].split('\n')
+            i = 0
             for collab in collaborators:
                 # remove university
                 left_paren_loc = collab.find('(')
                 if left_paren_loc > -1:
                     collab = collab[:left_paren_loc].strip()
+
+                # check for backwards name
                 if susp_1.match(collab):
                     isBad = True
                     bad_collabs.append(collab)
-                if set(collab).difference(special_chars):
+                    fixed = fix_backwards(collab)
+                    collaborators[i] = fixed
+                    print('backwards name\n')
+                    print("changed: %-80s\n     to: %-80s\n" % (collab, fixed))
+                if set(collab).difference(legal_chars):
                     non_ascii = True
                     non_ascii_list.append(collab)
+                    fixed = translate(collab, trans_dict, legal_chars)
+                    print('bad char in name\n')
+                    print("changed: %-80s\n     to: %-80s\n" % (collab, fixed))
+                # do next guy
+                i = i + 1
+
             if isBad:
                 to_check[pc['']] = bad_collabs
             if non_ascii:
@@ -65,7 +107,18 @@ def is_ascii(s):
     return all(ord(c) < 128 for c in s)
 
 
+def save_obj(obj, name):
+    with open(name + '.pkl', 'wb') as f:
+        pickle.dump(obj, f, pickle.HIGHEST_PROTOCOL)
+
+
+def load_obj(name):
+    with open(name + '.pkl', 'rb') as f:
+        return pickle.load(f)
+
+
 if __name__ == '__main__':
+
     parser = argparse.ArgumentParser(
         description='Cleanup ttt file from HOTCRP')
     parser.add_argument('filename',  type=str,
