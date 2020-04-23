@@ -6,19 +6,24 @@ from string import ascii_letters
 
 
 def cleanup(filename):
+    print(ascii_letters)
+    exit()
     asciis = ascii_letters + ' .-'
+    ### DEFINE SPECIAL CHARS HERE
+    special_chars = asciis
     to_check = {}
     check_pc_names = {}
     check_collab_names = {}
     susp_1 = re.compile(".*,.*")
+
 
     def isascii(s): return len(s) == len(s.encode())
     with open(filename, encoding='mac_roman') as csvfile:
         reader = csv.DictReader(csvfile)
         for pc in reader:
             pc_name = pc['first'] + pc['last']
-            if set(pc_name).difference(asciis):
-                check_pc_names[pc['id']] = pc_name
+            if set(pc_name).difference(special_chars):
+                check_pc_names[pc['']] = pc_name
             isBad = False
             non_ascii = False
             bad_collabs = []
@@ -28,17 +33,17 @@ def cleanup(filename):
                 # remove university
                 left_paren_loc = collab.find('(')
                 if left_paren_loc > -1:
-                    collab = collab[:left_paren_loc]
+                    collab = collab[:left_paren_loc].strip()
                 if susp_1.match(collab):
                     isBad = True
                     bad_collabs.append(collab)
-                if set(collab).difference(asciis):
+                if set(collab).difference(special_chars):
                     non_ascii = True
                     non_ascii_list.append(collab)
             if isBad:
-                to_check[pc['id']] = bad_collabs
+                to_check[pc['']] = bad_collabs
             if non_ascii:
-                check_collab_names[pc['id']] = non_ascii_list
+                check_collab_names[pc['']] = non_ascii_list
 
     print("bad collab format")
     for key, value in to_check.items():
@@ -67,6 +72,5 @@ if __name__ == '__main__':
         description='Cleanup ttt file from HOTCRP')
     parser.add_argument('filename',  type=str,
                         help='csv file of names and dblp links')
-    group = parser.add_mutually_exclusive_group(required=False)
     args = parser.parse_args()
     cleanup(filename=args.filename)
