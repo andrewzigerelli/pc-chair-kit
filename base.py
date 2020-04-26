@@ -1,6 +1,7 @@
 from fuzzywuzzy import fuzz
 from util import iterate_csv
-RATIO_MATCH = 90
+import sys
+RATIO_MATCH = 75
 
 
 class Person(object):
@@ -21,10 +22,16 @@ class Person(object):
         self.key = key
 
     def match(self, person):
+        #str_person is a pc member
         if isinstance(person, Person) and self.has_key and person.has_key:
             return self.key == person.key
         str_person = person if isinstance(person, str) else person.name
-        if fuzz.token_sort_ratio(self.name, str_person) > RATIO_MATCH:
+        result = fuzz.token_sort_ratio(self.name, str_person)
+        if result > RATIO_MATCH:
+            if result < 100:
+                print(result)
+                print(self.name)
+                print(str_person)
             return True
         return False
 
@@ -46,7 +53,7 @@ class Institution(object):
         return False
 
     def __str__(self):
-        return self.list_inst[0]
+        return str(self.list_inst[0])
 
 
 class Institutions(object):

@@ -1,188 +1,515 @@
-Academy of Equipment
-AMD,AMD Research,Advanced Micro Devices, AMD Inc.,Advanced Micro Devices; Inc.
-Apple
-ARM,ARM Holdings,ARM Research,Arm Inc.,Arm,Arm Inc
-ASU,Arizona State,Arizona State University,
-Ajou University
-Mei University
-TOBB university,TOBB
-Yale University,Yale
-University of Arizona
-University of Kent,Kent
-University of Twente
-University of Utah,Utah,U. of Utah
-University of Iowa
-IT University of Copenhagen
-BSC,Barcelona Supercomputing Center,Barcelona Supercomputing Center - BSC
-Binghampton,Binghampton University,SUNY,SUNY Binghampton,Binghamton University,SUNY Binghamton,Binghamton
-Boston University,BU,Boston,Boston U
-Brown,Brown University
-Bar Ilan University
-BYU,Brigham Young,Brigham Young University
-Cambridge,Cambridge University,U Cambridge,University of Cambridge
-Campinas,University of Campinas
-University of Arkansas
-CAS,Chinese Academy of Sciences,ICT,Institute of Computing Technology,CAS/ICT,Institute of Computing Technology Chinese Academy of Sciences,ICT; CAS,ICT; Chinese Academy of Sciences,Institute of Computing Techonlogy; Chinese Academy of Sciences
-Illinois Institute of Technology
-Univ. of Illinois
-Shenzhen Institute of Advanced Technology; CAS
-Catania,University of Catania
-University of Alberta
-Cavium,Cavium Inc
-Chalmers,Chalmers University of Technology
-HK,City University of Hong Kong
-Chinese University of Hong Kong, Chinese University at Hong Kong
-CMU,Carnegie Mellon,Carnegie Mellon University,Carnegie Mellon University / ETHZ,Carnegie Melon University
-Columbia,Columbia University
-Cyprus,University of Cyprus,U. Cyprus
-Connecticut,Uniersity of Connecticut,U Connecticut,Univ. of Connecticut
-Cornell,Cornell University
-Drexel University,Drexel
-Duke,Duke University
-Asoka University
-Nagoya University
-Edinburgh,University of Edinburgh,U. Edinburgh,U. of Edinburgh
-EPFL
-ETH,ETHZ,ETH Zurich,ETH Zürich,ETH-Zurich
-Facebook,Facebook Research,Facebook/NYU,NYU,Facebook and NYU
-Florida,University of Florida,U of Florida,Univ of Florida,Univ. of Florida
-Fujitsu
-Ghent,Ghent University,Ghen,Ghent University - UGent,UGent,University of Ghent
-Georgia Tech,GT,Georgia,Georgia Institute of Technology,(Georgia Tech, GA Tech,GATech,GaTech
-UGA, University of Georgia
-George Washington University,GWU,George
-George Mason University
-Georgetown University
-Washington State University
-Google,Google/Berkeley,Google/UC Berkeley
-Harvard,Harvard University,Saarland University,Saarland
-HP,Hewlett Packard,Hewlett Packard Enterprise, Hewlett Packard Labs,HP Labs,Hewlett-Packard
-Houston,University of Houston
-Huawei,Huawei Technologies
-IDA
-IBM,IBM Research,IBM T. J. Watson Research Center
-IISc,Indian Institute of Science,IISc. India, Indian Institute of Sciences,Indian Institute of Sciences,Indian Institute of Science; Bangalore,IISc Bangalore
-IIT,Indian Institute of Technology,Indian Institute of Technology Kanpur,Indian Institute of Technology; Chennai
-INRIA,IRISA/INRIA 2015,Inria
-IFLYTECH,IFLYTEK
-Intel,Intel Labs,Intel Corporation,INTEL,intel,IBM Corporation,Intel Corp,Intel Corp.
-KAIST,KAIST; Korea,Korea Advanced Institute of Science and Technology,
-Kore,Kore University,Korea University
-Kyushu,Kyushu University
-KTH Royal Institute of Technology, KTH
-Ulsan National Institute of Science and Technology
-LLNL,Lawrence Livermore National Labs,Lawrence Livermore National Laboratory,Livermore
-Argonne National Laboratory,Argonne National Labs
-LBNL,Lawrence Berkeley National Labs,Lawrence Berkeley National Laboratory,Lawrence Berkeley National Lab
-Micron
-Microsoft,Microsoft Research,MSR,UT/Microsoft,All Microsoft
-Minnesota,University of Minnesota,U of Minnesota,University Minnesota,University of Minesotta
-MIT,Massachusetts Institute of Technology, MIT CSAIL
-NCSU,North Carolina State University,N.C. State,NC State University,NC State
-NTU,National Taiwan University,National Taiwan U
-Tsinghua, National Tsinghua University,National Tsing Hua University,Tsinghua University
-NUS, National University of Singapore,National University of Singapore
-NII,National Institute of Informatics
-NJIT,New Jersey Institute of Technology
-Northeastern,Northeastern University,NorthEastern
-Northwestern,Northwestern University
-NSF,National Science Foundation
-NVIDIA,MIT/NVIDIA,MIT; Nvidia,NVIDIA/MIT,NVidia,Nvidia,UT/NVIDIA
-NUDT,National University of Defense Technology,National Defense University of China,National University of Defence Technology
-OKST,Oklahoma State University,OKState,OK State,University of Oklahoma
-OSU,Ohio State,Ohio State University,The Ohio State University
-Oracle,Oracle Labs,Oracle Corporation,MIT/Oracle Labs
-Oregon
-Oregon State,Oregon State University
-California State University; Fullerton
-ORNL,Oak Ridge National Labs,Oak Ridge National Laboratory,Oak Ridge National Lab - ORNL
-Pittsburgh,University of Pittsburgh,U Pittsburg,U Pittsburgh,U of Pittsburgh,U.Pittsburgh,University of Pittsburgh, UPitt, U. Pitt,U of Pitt
-POSTECH
-PSU,Penn State,Penn State University,Pennsylvania State University,Penn State university,Penn. State,U Penn
-University of Pennsylvania,Penn
-PNNL,Pacific Northwest National Labs,Pacific Northwest National Laboratory,Pacific Northwest National Lab
-Princeton,Princeton University
-Rice University,Rice
-Beihang University
-Zhejiang University
-Peking University
-Purdue,Purdue University,Radboud University
-Qualcomm,Qualcomm Research,qualcomm
-RDA, RDA Microelectronics
-Richmond,University of Richmond
-Rochester,University of Rochester,University of Rochseter,U of Rochester,U. Rochester,Univ of Rochester
-Samsung,Samsung Electronics,Samsung Research, Samsung R&D Institute, Samsung Electronics Co
-LG,LG Electronics
-Sandia,Sandia National Labs,Sandia National Laboratory,Sandia National Lab
-Seoul National,Seoul,Seoul National University,Seoul University
-National Technical University of Athens
-Istanbul Technical University
-Technical University of Munich,TU Munich
-National and Kapodistrian University of Athens,U. Athens,University of Athens
-National Chi Nan University
-East China Normal University
-National Central University
-SJTU,Shanghai Jiao Tong University,Shanghai Jiaotong University,Shanghai Jiao Tong
-Stanford,Stanford University
-SRI,SRI International
-Stony Brook,Stony Brook University, SUNY Stony Brook,SUNY Stony Brook
-Simon Fraser,Simon Fraser University, SFU,SFU
-Sun, Sun Microsystems
-Technion
-Texas A&M,Texas AM,Texas A&M University,Texas,Texas AM University,texas,Texas A&M International University,Texas A&M International
-Texas SA,University of Texas San Antonio,UT San Antonio,U.T. San Antonio, U of Texas San Antonio,U of Texas-San Antonio,UT,University of Texas
-University of North Texas,Univ. of North Texas,Univ. North Texas
-TI,Texas Instruments
-Tokyo,University of Tokyo,The University of Tokyo,University of the Pacific
-Toronto,University of Toronto, U Toronto,U of Toronto,U. of Toronto
-University of Bristol; UK
-TSMC,Taiwan Semiconductor Manufacturing Company
-TU Vienna
-Tufts,Tufts University
-UBC,University of British Columbia,University of British Coliumbia,Univ. of British Columbia
-Berkeley,UCB,University of California Berkeley,UC Berkeley,U.C. Berkeley,University of California; Berkely,
-University of California Merced,UC Merced
-University of California; Irvine,University of California-Irvine
-University of California; Davis,UC Davis
-UCLA,University of California Los Angeles,University of California; Los Angeles
-UCSB,University of California Santa Barbara,UC Santa Barbara,UC; Santa Barbara,UC Santa Barbara/Alibaba,UCSB/Alibaba,Alibaba
-UCSD,University of California San Diego,UC San Diego,U.C. San Diego,UC-San Diego,University of California; San Diego
-UCSC,University of California Santa Cruz,UC Santa Cruz,University of California; Santa Cruz
-UCR,University of California Riverside,UC Riverside,UC-Riverside,UC; Riverside,University of California at Riverside,University of California; Riverside
-UIUC,University of Illinois Urbana Champaign,UC Urbana Champaign,U.C. Urbana Champaign, U Illinois, Illinois,(University of Illinois - UIUC,Illinois,University of Illinois,University of Illinois - UIUC,University of Illinois at Urbana-Champaign,University of Illinois; Urbana-Champaign
-UMass,University of Massachusetts Amherst,UMass Amherst,UMASS,University of Massachusetts; Amherst
-Michigan,University of Michigan Ann Arbor,University of Michigan,University of Michigan at Ann Arbor,University of Michigan; Ann Arbor,University of Michigan; 2020,U Michigan,U. Michigan
-MSU,Michigan State University
-MTU,Michigan Tech University,Michigan Tech,Michigan Tech. Univ.,Univ. of Michigan
-Rhode Island,University of Rhode Island
-Rutgers,University of Rutgers,Rutgers University,University of Tehran
-USC,University of Southern California
-UVA,Virginia,University of Virginia,UVa,The University of Virginia,U. Virginia,University of Virgina
-UPC,UPC Barcelona,Universitat Politecnica de Catalunya,Universitat Politècnica de Catalunya, Barcelona Supercomputing Center, BSC,UPC/BSC,Universitat Polit??cnica de Catalunya
-Uppsala,Uppsala University
-UT Austin,University of Texas Austin,All The University of Texas at Austin,Austin,Texas at Austin,The University of Texas at Austin,UT-Austin,University of Texas - Austin,University of Texas at Austin,University of Texas-Austin,Univ. of Texas; Austin
-University of Texas at Arlington
-University of Texas at Dallas,UT Dallas,UT dallas
-Vanderbilt,Vanderbilt University
-VMware,UT Austin/VMware,VMWare
-WashU,Washington University of St. Louis,Washington University St. Louis,Washington St. Louis,Washington University at St. Louis,Washington University in St. Louis,U of Washington,Univ. of Washington
-Wisconsin,University of Wisconsin Madison,University of Wisconsin, UW Madison,UW Madison,UW-Madison,University Wisconsin,University of Wisconsin - Madison,University of Wisconsin - Madison; 2020,University of Wisconsin -Madison,University of Wisconsin--Madison,University of Wisconsin-Madison,University of Wisconsin; Madison,U Wisconsin,U of Wisconsin,Univ of Wisconsin; Madison,Univ. of Wisconsin,University of Wisconsin - La Crosse,UWisc,U. Wisc.,U Wisc
-William and Mary,College of William and Mary,William & Mary,Collage of Willaim and Marry,College of W&M,W&M,College W&M
-WD,Western Digital,Western Digital Co
-Washington,UW,University of Washington,University of Washington/AMD,Washington University,U Washington,U. Washington
-Vencore,Vencore Labs
-Yonsei,Yonsei University
-Hongik University,Hongkik University
-QCRI
-Chicago, University of Chicago,University of Chicago,University of Illinois; Chicago,U of Chicago,U Chicago
-Waterloo, University of Waterloo,University of Waterloo,Univ. of Waterloo
-Sharif, Sharif University of Technology,King Mongkut's University of Technology North Bangkok
-Hong Kong University of Science and Technology
-HUST,Huazhong University of Science and Technology
-Pohang University of Science and Technology
-Norwegian University of Science and Technology,NTNU,Norwegian University of Science and Technology - NTNU
-UCF,University of Central Florida
-USF,University of South Florida
-Florida International University
-Australian National University
-FSU,Florida State University
+AMD,Advanced Micro Devices,AMD Research, AMD Inc.,Advanced Micro Devices; Inc.,,,,,,,,,,,,,,,,,,,,
+Apple,Apple Austin,Apple Inc,,,,,,,,,,,,,,,,,,,,,,
+ARM,ARM Holdings,ARM Research,Arm Inc.,Arm,Arm Inc,ARM Inc,Arm Research,,,,,,,,,,,,,,,,,
+ASU,Arizona State,Arizona State University,,,,,,,,,,,,,,,,,,,,,,
+Ajou University,,,,,,,,,,,,,,,,,,,,,,,,
+Mei University,,,,,,,,,,,,,,,,,,,,,,,,
+TOBB university,TOBB,TOBB ETU,,,,,,,,,,,,,,,,,,,,,,
+Yale,Yale University,,,,,,,,,,,,,,,,,,,,,,,
+University of Arizona,,,,,,,,,,,,,,,,,,,,,,,,
+University of Kent,Kent,,,,,,,,,,,,,,,,,,,,,,,
+University of Twente,,,,,,,,,,,,,,,,,,,,,,,,
+Utah,University of Utah,U. of Utah,The University of Utah,,,,,,,,,,,,,,,,,,,,,
+University of Iowa,,,,,,,,,,,,,,,,,,,,,,,,
+IT University of Copenhagen,,,,,,,,,,,,,,,,,,,,,,,,
+BSC,Barcelona Supercomputing Center,Barcelona Supercomputing Center - BSC,,,,,,,,,,,,,,,,,,,,,,
+Binghampton,Binghamton University,SUNY,SUNY Binghampton,Binghampton University,SUNY Binghamton,Binghamton,,,,,,,,,,,,,,,,,,
+Boston University,BU,Boston,Boston U,,,,,,,,,,,,,,,,,,,,,
+Brown,Brown University,,,,,,,,,,,,,,,,,,,,,,,
+Bar Ilan University,,,,,,,,,,,,,,,,,,,,,,,,
+BYU,Brigham Young,Brigham Young University,,,,,,,,,,,,,,,,,,,,,,
+Cambridge,Cambridge University,U Cambridge,University of Cambridge,,,,,,,,,,,,,,,,,,,,,
+Campinas,University of Campinas,,,,,,,,,,,,,,,,,,,,,,,
+University of Arkansas,Arkansas University,,,,,,,,,,,,,,,,,,,,,,,
+CAS,Chinese Academy of Sciences,ICT,Institute of Computing Technology,CAS;China,CAS/ICT,Institute of Computing Technology Chinese Academy of Sciences,ICT; CAS,ICT; Chinese Academy of Sciences,Institute of Computing Techonlogy; Chinese Academy of Sciences,,,,,,,,,,,,,,,
+Illinois Institute of Technology,,,,,,,,,,,,,,,,,,,,,,,,
+Univ. of Illinois,university of illinois at urbana champaign,Univ. Illinois,,,,,,,,,,,,,,,,,,,,,,
+Shenzhen Institute of Advanced Technology; CAS,,,,,,,,,,,,,,,,,,,,,,,,
+Catania,University of Catania,,,,,,,,,,,,,,,,,,,,,,,
+University of Alberta,,,,,,,,,,,,,,,,,,,,,,,,
+Cavium,Cavium Inc,,,,,,,,,,,,,,,,,,,,,,,
+Chalmers,Chalmers University of Technology,,,,,,,,,,,,,,,,,,,,,,,
+City University of Hong Kong,University of Hong Kong,,,,,,,,,,,,,,,,,,,,,,,
+Chinese University of Hong Kong, Chinese University at Hong Kong,,,,,,,,,,,,,,,,,,,,,,,
+CMU,carnegie mellon university,Carnegie Mellon University,Carnegie Mellon University / ETHZ,Carnegie Melon University,Carnegie Mellon,Carnigie Melon University,,,,,,,,,,,,,,,,,,
+Columbia,Columbia University,University of Columbia,,,,,,,,,,,,,,,,,,,,,,
+Cyprus,University of Cyprus,U. Cyprus,,,,,,,,,,,,,,,,,,,,,,
+Cyprus University of Technology,,,,,,,,,,,,,,,,,,,,,,,,
+Connecticut,Uniersity of Connecticut,U Connecticut,Univ. of Connecticut,University of Connecticut,,,,,,,,,,,,,,,,,,,,
+Cornell,Cornell University,,,,,,,,,,,,,,,,,,,,,,,
+Drexel University,Drexel,,,,,,,,,,,,,,,,,,,,,,,
+Duke,Duke University,,,,,,,,,,,,,,,,,,,,,,,
+Asoka University,,,,,,,,,,,,,,,,,,,,,,,,
+Nagoya University,,,,,,,,,,,,,,,,,,,,,,,,
+Edinburgh,University of Edinburgh,U. Edinburgh,U. of Edinburgh,Univ. Edinburg,,,,,,,,,,,,,,,,,,,,
+ETH,eth zurich,ETH Zurich,ETH Zurich,ETH-Zurich,Swiss Federal Institute of Technology in Zurich,Eidgenossische Technische Hochschule Zurich,ETHZ,,,,,,,,,,,,,,,,,
+Facebook,Facebook Research,Facebook/NYU,NYU,Facebook and NYU,,,,,,,,,,,,,,,,,,,,
+Facebook,Facebook Research,,,,,,,,,,,,,,,,,,,,,,,
+Florida,University of Florida,U of Florida,Univ of Florida,Univ. of Florida,U. of Florida,,,,,,,,,,,,,,,,,,,
+UBFC; FEMTO-ST Institute,,,,,,,,,,,,,,,,,,,,,,,,
+Fujitsu,,,,,,,,,,,,,,,,,,,,,,,,
+Ghent,Ghent University,Ghen,Ghent University - UGent,UGent,University of Ghent,,,,,,,,,,,,,,,,,,,
+Georgia Tech,georgia institute of technology,Georgia,Georgia Institute of Technology,GA Tech,GATech,Gatech,GT,,,,,,,,,,,,,,,,,
+UGA, University of Georgia,,,,,,,,,,,,,,,,,,,,,,,
+George Washington University,GWU,George,,,,,,,,,,,,,,,,,,,,,,
+George Mason University,,,,,,,,,,,,,,,,,,,,,,,,
+Georgetown University,,,,,,,,,,,,,,,,,,,,,,,,
+Washington State University,,,,,,,,,,,,,,,,,,,,,,,,
+Google/Berkeley,Google,Google/UC Berkeley,,,,,,,,,,,,,,,,,,,,,,
+Harvard,Harvard University,Saarland University,Saarland,,,,,,,,,,,,,,,,,,,,,
+HP,Hewlett Packard,Hewlett Packard Enterprise, Hewlett Packard Labs,HP Labs,Hewlett-Packard,Hewlett-Packard Labs,,,,,,,,,,,,,,,,,,
+Houston,University of Houston,,,,,,,,,,,,,,,,,,,,,,,
+Huawei,Huawei Technologies,,,,,,,,,,,,,,,,,,,,,,,
+HAilo,,,,,,,,,,,,,,,,,,,,,,,,
+IDA,,,,,,,,,,,,,,,,,,,,,,,,
+IBM Research,IBM,IBM T. J. Watson Research Center,,,,,,,,,,,,,,,,,,,,,,
+IISc,Indian Institute of Science,IISc. India, Indian Institute of Sciences,Indian Institute of Sciences,Indian Institute of Science; Bangalore,IISc Bangalore,Indian Institute of Science Bangalore,,,,,,,,,,,,,,,,,
+IIT,Indian Institute of Technology,Indian Institute of Technology Kanpur,Indian Institute of Technology; Chennai,Indian Institute of Technology Chennai,,,,,,,,,,,,,,,,,,,,
+INRIA,IRISA/INRIA 2015,Inria,,,,,,,,,,,,,,,,,,,,,,
+IRISA,,,,,,,,,,,,,,,,,,,,,,,,
+IFLYTECH,IFLYTEK,,,,,,,,,,,,,,,,,,,,,,,
+Intel Labs,Intel,Intel Corporation,INTEL,intel,Intel Corp,Intel Corp.,,,,,,,,,,,,,,,,,,
+KAIST; Korea,KAIST,Korea Advanced Institute of Science and Technology,,,,,,,,,,,,,,,,,,,,,,
+Kore,Kore University,Korea University,,,,,,,,,,,,,,,,,,,,,,
+Kyushu,Kyushu University,,,,,,,,,,,,,,,,,,,,,,,
+KTH Royal Institute of Technology, KTH,KTH,,,,,,,,,,,,,,,,,,,,,,
+Ulsan National Institute of Science and Technology,,,,,,,,,,,,,,,,,,,,,,,,
+LLNL,Lawrence Livermore National Labs,Lawrence Livermore National Laboratory,Livermore,Livermore Labs,,,,,,,,,,,,,,,,,,,,
+LIRMM,,,,,,,,,,,,,,,,,,,,,,,,
+Argonne National Laboratory,Argonne National Labs,,,,,,,,,,,,,,,,,,,,,,,
+LBNL,Lawrence Berkeley National Labs,Lawrence Berkeley National Laboratory,Lawrence Berkeley National Lab,,,,,,,,,,,,,,,,,,,,,
+Micron,,,,,,,,,,,,,,,,,,,,,,,,
+MDH,,,,,,,,,,,,,,,,,,,,,,,,
+Microsoft Research,Microsoft,MSR,UT/Microsoft,All Microsoft,Microsoft Research - India,,,,,,,,,,,,,,,,,,,
+Minnesota,University of Minnesota,U of Minnesota,University Minnesota,UMN,U Minnessota Twin Cities,,,,,,,,,,,,,,,,,,,
+MIT,Massachusetts Institute of Technology, MIT CSAIL,,,,,,,,,,,,,,,,,,,,,,
+NCSU,North Carolina State University,N.C. State,NC State University,NC State,University of North Carolina,,,,,,,,,,,,,,,,,,,
+NTU,National Taiwan University,National Taiwan U,,,,,,,,,,,,,,,,,,,,,,
+National Tsinghua University,National Tsing Hua University,,,,,,,,,,,,,,,,,,,,,,,
+Tsinghua,Tsinghua University,Tsinghua University; China,,,,,,,,,,,,,,,,,,,,,,
+NUS, National University of Singapore,National University of Singapore,,,,,,,,,,,,,,,,,,,,,,
+NII,National Institute of Informatics,,,,,,,,,,,,,,,,,,,,,,,
+NJIT,New Jersey Institute of Technology,,,,,,,,,,,,,,,,,,,,,,,
+Northeastern,Northeastern University,NorthEastern,NEU,,,,,,,,,,,,,,,,,,,,,
+Northwestern,Northwestern University,,,,,,,,,,,,,,,,,,,,,,,
+NSF,National Science Foundation,,,,,,,,,,,,,,,,,,,,,,,
+NUDT,National University of Defense Technology,National Defense University of China,National University of Defence Technology,,,,,,,,,,,,,,,,,,,,,
+OKST,Oklahoma State University,OKState,OK State,University of Oklahoma,,,,,,,,,,,,,,,,,,,,
+OSU,Ohio State,Ohio State University,The Ohio State University,,,,,,,,,,,,,,,,,,,,,
+Oracle,Oracle Labs,Oracle Corporation,MIT/Oracle Labs,,,,,,,,,,,,,,,,,,,,,
+Oregon,,,,,,,,,,,,,,,,,,,,,,,,
+Oregon State,Oregon State University,,,,,,,,,,,,,,,,,,,,,,,
+California State University; Fullerton,California State University Fullerton,,,,,,,,,,,,,,,,,,,,,,,
+ORNL,Oak Ridge National Labs,Oak Ridge National Laboratory,Oak Ridge National Lab - ORNL,Oak Ridge National Lab,,,,,,,,,,,,,,,,,,,,
+Pittsburgh,University of Pittsburgh,U Pittsburg,U Pittsburgh,U of Pittsburgh,U.Pittsburgh,University of Pittsburgh, UPitt, U. Pitt,U of Pitt,,,,,,,,,,,,,,,
+POSTECH,,,,,,,,,,,,,,,,,,,,,,,,
+Politecnico di Torino,Politecnio di Torino,,,,,,,,,,,,,,,,,,,,,,,
+PSU,Pennsylvania State University,Penn State University,Penn State,Penn State university,Penn. State,U Penn,The Pennsylvania State University,PennState,Pennstate,,,,,,,,,,,,,,,
+Penn,University of Pennsylvania,,,,,,,,,,,,,,,,,,,,,,,
+PNNL,Pacific Northwest National Labs,Pacific Northwest National Laboratory,Pacific Northwest National Lab,,,,,,,,,,,,,,,,,,,,,
+Princeton,Princeton University,,,,,,,,,,,,,,,,,,,,,,,
+Rice University,Rice,,,,,,,,,,,,,,,,,,,,,,,
+Beihang University,,,,,,,,,,,,,,,,,,,,,,,,
+Zhejiang University,,,,,,,,,,,,,,,,,,,,,,,,
+Peking University,peking university,,,,,,,,,,,,,,,,,,,,,,,
+Purdue,Purdue University,Radboud University,,,,,,,,,,,,,,,,,,,,,,
+Qualcomm Research,Qualcomm,qualcomm,,,,,,,,,,,,,,,,,,,,,,
+RDA, RDA Microelectronics,,,,,,,,,,,,,,,,,,,,,,,
+Richmond,University of Richmond,,,,,,,,,,,,,,,,,,,,,,,
+Rochester,University of Rochester,University of Rochseter,U of Rochester,U. Rochester,Univ of Rochester,,,,,,,,,,,,,,,,,,,
+Samsung,Samsung Electronics,Samsung Research, Samsung R&D Institute, Samsung Electronics Co,Samsung R&D,,,,,,,,,,,,,,,,,,,
+LG,LG Electronics,Microsoft Electronics,,,,,,,,,,,,,,,,,,,,,,
+Sandia,Sandia National Labs,Sandia National Laboratory,Sandia National Lab,Sandia National Laboratories,,,,,,,,,,,,,,,,,,,,
+Seoul,Seoul National,Seoul National University,Seoul University,,,,,,,,,,,,,,,,,,,,,
+Shahid Chamran University of Ahvaz,,,,,,,,,,,,,,,,,,,,,,,,
+National Technical University of Athens,,,,,,,,,,,,,,,,,,,,,,,,
+Istanbul Technical University,,,,,,,,,,,,,,,,,,,,,,,,
+Technical University of Munich,TU Munich,,,,,,,,,,,,,,,,,,,,,,,
+National and Kapodistrian University of Athens,U. Athens,University of Athens,UoA,,,,,,,,,,,,,,,,,,,,,
+National Chi Nan University,,,,,,,,,,,,,,,,,,,,,,,,
+East China Normal University,,,,,,,,,,,,,,,,,,,,,,,,
+National Central University,,,,,,,,,,,,,,,,,,,,,,,,
+SJTU,Shanghai Jiao Tong University,Shanghai Jiaotong University,Shanghai Jiao Tong,,,,,,,,,,,,,,,,,,,,,
+Stanford,Stanford University,,,,,,,,,,,,,,,,,,,,,,,
+SRI,SRI International,,,,,,,,,,,,,,,,,,,,,,,
+Stony Brook,Stony Brook University, SUNY Stony Brook,SUNY Stony Brook,NSF; Stony Brook,,,,,,,,,,,,,,,,,,,,
+Simon Fraser,Simon Fraser University, SFU,SFU,,,,,,,,,,,,,,,,,,,,,
+Sun, Sun Microsystems,,,,,,,,,,,,,,,,,,,,,,,
+Technion,,,,,,,,,,,,,,,,,,,,,,,,
+Toga,,,,,,,,,,,,,,,,,,,,,,,,
+Texas A&M,Texas AM,Texas A&M University,Texas,Texas AM University,texas,Texas A&M International University,Texas A&M International,,texas a m university,,TAMU,,,,,,,,,,,,,
+Texas SA,University of Texas San Antonio,UT San Antonio,U.T. San Antonio, U of Texas San Antonio,U of Texas-San Antonio,UT,University of Texas,,,,,,,,,,,,,,,,,
+University of North Texas,Univ. of North Texas,Univ. North Texas,,,,,,,,,,,,,,,,,,,,,,
+TI,Texas Instruments,,,,,,,,,,,,,,,,,,,,,,,
+Tokyo,University of Tokyo,The University of Tokyo,University of the Pacific,,,,,,,,,,,,,,,,,,,,,
+Toronto,University of Toronto, U Toronto,U of Toronto,U. of Toronto,All U of Toronto,U. Toronto,UofT,UToronto,,,,,,,,,,,,,,,,
+University of Bristol; UK,,,,,,,,,,,,,,,,,,,,,,,,
+TSMC,Taiwan Semiconductor Manufacturing Company,,,,,,,,,,,,,,,,,,,,,,,
+TU Vienna,,,,,,,,,,,,,,,,,,,,,,,,
+Tufts,Tufts University,,,,,,,,,,,,,,,,,,,,,,,
+UBC,University of British Columbia,University of British Coliumbia,Univ. of British Columbia,The University of British Columbia,,,,,,,,,,,,,,,,,,,,
+Berkeley,UCB,University of California Berkeley,UC Berkeley,U.C. Berkeley,University of California; Berkely,,,,,,,,,,,,,,,,,,,
+University of California Merced,UC Merced,University of California; Merced,,,,,,,,,,,,,,,,,,,,,,
+University of California; Irvine,University of California-Irvine,University of California Irvine,University of California Irvine; SpaceX,UC Irvine,,,,,,,,,,,,,,,,,,,,
+University of California; Davis,UC Davis,UC; Davis,University of California Davis,,,,,,,,,,,,,,,,,,,,,
+UCLA,University of California Los Angeles,University of California; Los Angeles,,,,,,,,,,,,,,,,,,,,,,
+UCSB,University of California Santa Barbara,UC Santa Barbara,UC; Santa Barbara,UC Santa Barbara/Alibaba,UCSB/Alibaba,Alibaba,University of California at Santa Barbara,,,,,,,,,,,,,,,,,
+UCSD,University of California San Diego,UC San Diego,U.C. San Diego,UC-San Diego,University of California; San Diego,University of California - San Diego,,,,,,,,,,,,,,,,,,
+UCSC,University of California Santa Cruz,UC Santa Cruz,University of California; Santa Cruz,,,,,,,,,,,,,,,,,,,,,
+UCR,University of California Riverside,UC Riverside,UC-Riverside,UC; Riverside,University of California at Riverside,University of California; Riverside,,,,,,,,,,,,,,,,,,
+UIUC,University of Illinois Urbana Champaign,UC Urbana Champaign,U.C. Urbana Champaign, U Illinois, Illinois,University of Illinois - UIUC,Illinois,University of Illinois,University of Illinois - UIUC,,,,,,,,,,,,,,,
+UMass,University of Massachusetts Amherst,UMass Amherst,UMASS,University of Massachusetts; Amherst,UMass at Amherst,,,,,,,,,,,,,,,,,,,
+Michigan,university of michigan,University of Michigan,University of Michigan at Ann Arbor,University of Michigan; Ann Arbor,University of Michigan; 2020,U Michigan,U. Michigan,Univ. of Michigan,Univ of Michigan,UMICH,UMich,University of Michigan Ann Arbor,,,,,,,,,,,,
+MSU,Michigan State University,,,,,,,,,,,,,,,,,,,,,,,
+MTU,Michigan Tech University,Michigan Tech,Michigan Tech. Univ.,Michigan Technological University,,,,,,,,,,,,,,,,,,,,
+Rhode Island,University of Rhode Island,,,,,,,,,,,,,,,,,,,,,,,
+Rutgers,University of Rutgers,Rutgers University,,,,,,,,,,,,,,,,,,,,,,
+University of Tehran,,,,,,,,,,,,,,,,,,,,,,,,
+USC,University of Southern California,,,,,,,,,,,,,,,,,,,,,,,
+UVA,university of virginia,University of Virginia,UVa,The University of Virginia,U. Virginia,University of Virgina,Virginia,,,,,,,,,,,,,,,,,
+UPC,UPC Barcelona,Universitat Politecnica de Catalunya,Universitat Politecnica de Catalunya,UPC/BSC,Universitat Polytechnica de Catalunya,,,,,,,,,,,,,,,,,,,
+ BSC,Barcelona Supercomputing Center,,,,,,,,,,,,,,,,,,,,,,,
+Uppsala,Uppsala University,,,,,,,,,,,,,,,,,,,,,,,
+UT Austin,university of texas at austin,All The University of Texas at Austin,Austin,Texas at Austin,The University of Texas at Austin,UT-Austin,University of Texas - Austin,University of Texas at Austin,University of Texas-Austin,Univ. of Texas; Austin,Nvidia; University of Texas at Austin,U. of Texas at Austin,University of Texas; Austin,UTexas,UTexas ARL,University of Texas Austin,,,,,,,,
+University of Texas at Arlington,,,,,,,,,,,,,,,,,,,,,,,,
+University of Texas at Dallas,UT Dallas,UT dallas,,,,,,,,,,,,,,,,,,,,,,
+Vanderbilt,Vanderbilt University,,,,,,,,,,,,,,,,,,,,,,,
+UT Austin/VMware,VMware,VMWare,,,,,,,,,,,,,,,,,,,,,,
+WashU,Washington University of St. Louis,Washington University St. Louis,Washington St. Louis,Washington University at St. Louis,Washington University in St. Louis,U of Washington,Univ. of Washington,,,,,,,,,,,,,,,,,
+Wisconsin,University of Wisconsin Madison,University of Wisconsin, UW Madison,UW Madison,UW-Madison,University Wisconsin,University of Wisconsin - Madison,University of Wisconsin - Madison; 2020,University of Wisconsin -Madison,University of Wisconsin--Madison,University of Wisconsin-Madison,University of Wisconsin; Madison,U Wisconsin,U of Wisconsin,Univ of Wisconsin; Madison,Univ. of Wisconsin,University of Wisconsin - La Crosse,University of Wisconsin Madison,University of Wisconsin Madison,University of Wisconsin Madison,University of Wisconsin Madison,University of Wisconsin Madison,University of Wisconsin Madison,University of Wisconsin Madison
+William and Mary,College of William and Mary,William & Mary,Collage of Willaim and Marry,College of W&M,W&M,College W&M,College of William & Mary,,,,,,,,,,,,,,,,,
+WD,Western Digital,Western Digital Co,WDC,,,,,,,,,,,,,,,,,,,,,
+Washington,university of washington,University of Washington,University of Washington/AMD,Washington University,U Washington,U. Washington,UW,,,,,,,,,,,,,,,,,
+Vencore,Vencore Labs,,,,,,,,,,,,,,,,,,,,,,,
+Yonsei,Yonsei University,,,,,,,,,,,,,,,,,,,,,,,
+Hongik University,Hongkik University,,,,,,,,,,,,,,,,,,,,,,,
+QCRI,,,,,,,,,,,,,,,,,,,,,,,,
+Chicago, University of Chicago,University of Chicago,University of Illinois; Chicago,U of Chicago,U Chicago,,,,,,,,,,,,,,,,,,,
+Waterloo, University of Waterloo,University of Waterloo,Univ. of Waterloo,,,,,,,,,,,,,,,,,,,,,
+KMUTNB,King Mongkut's University of Technology North Bangkok,,King Mongkut s University of Technology North Bangkok,,,,,,,,,,,,,,,,,,,,,
+Hong Kong University of Science and Technology,,,,,,,,,,,,,,,,,,,,,,,,
+HUST,Huazhong University of Science and Technology,,,,,,,,,,,,,,,,,,,,,,,
+Pohang University of Science and Technology,,,,,,,,,,,,,,,,,,,,,,,,
+Norwegian University of Science and Technology,NTNU,Norwegian University of Science and Technology - NTNU,,,,,,,,,,,,,,,,,,,,,,
+UCF,University of Central Florida,,,,,,,,,,,,,,,,,,,,,,,
+USF,University of South Florida,,,,,,,,,,,,,,,,,,,,,,,
+Florida International University,,,,,,,,,,,,,,,,,,,,,,,,
+Australian National University,,,,,,,,,,,,,,,,,,,,,,,,
+FSU,Florida State University,,,,,,,,,,,,,,,,,,,,,,,
+4C,,,,,,,,,,,,,,,,,,,,,,,,
+AGU,,,,,,,,,,,,,,,,,,,,,,,,
+AMD Austin,,,,,,,,,,,,,,,,,,,,,,,,
+AMD; GaTech,,,,,,,,,,,,,,,,,,,,,,,,
+ANU,,,,,,,,,,,,,,,,,,,,,,,,
+AUTH; Greece,,,,,,,,,,,,,,,,,,,,,,,,
+Academia Sinica,Sinica Taiwan,Taiwan Central Research Academy,,,,,,,,,,,,,,,,,,,,,,
+Acquia,,,,,,,,,,,,,,,,,,,,,,,,
+Adelaide,The University of Adelaide,U Adelaide,University of Adelaide,,,,,,,,,,,,,,,,,,,,,
+Advantage Engineering,,,,,,,,,,,,,,,,,,,,,,,,
+Agilent,,,,,,,,,,,,,,,,,,,,,,,,
+Air Force Research Lab,,,,,,,,,,,,,,,,,,,,,,,,
+Alibaba Cloud,,,,,,,,,,,,,,,,,,,,,,,,
+Alibaba Group,,,,,,,,,,,,,,,,,,,,,,,,
+Alibaba T-head,,,,,,,,,,,,,,,,,,,,,,,,
+All NVIDIA,nVidia,NVIDIA,nVidia,NVidia,Nvidia,,,,,,,,,,,,,,,,,,,
+MIT/NVIDIA,MIT; Nvidia,NVIDIA/MIT,MIT/Nvidia,,,,,,,,,,,,,,,,,,,,,
+Alphabet,,,,,,,,,,,,,,,,,,,,,,,,
+Amazon,,,,,,,,,,,,,,,,,,,,,,,,
+Amplio.ai,,,,,,,,,,,,,,,,,,,,,,,,
+Aramco,,,,,,,,,,,,,,,,,,,,,,,,
+Arista Networks,,,,,,,,,,,,,,,,,,,,,,,,
+Arm Limited,,,,,,,,,,,,,,,,,,,,,,,,
+Ausgar Technologies,,,,,,,,,,,,,,,,,,,,,,,,
+Baidu,Baidu Research,,,,,,,,,,,,,,,,,,,,,,,
+Barracuda Networks,,,,,,,,,,,,,,,,,,,,,,,,
+Bigstream,,,,,,,,,,,,,,,,,,,,,,,,
+Bilkent,bilkent university,,,,,,,,,,,,,,,,,,,,,,,
+Bitmain,,,,,,,,,,,,,,,,,,,,,,,,
+Blockstack,,,,,,,,,,,,,,,,,,,,,,,,
+DARPA,,,,,,,,,,,,,,,,,,,,,,,,
+Booz Allen Hamilton,Booz Allen Hamilton + DARPA,,,,,,,,,,,,,,,,,,,,,,,
+Broadcom,,,,,,,,,,,,,,,,,,,,,,,,
+Brookhaven National Lab - BNL,Brookhaven National Lab,,,,,,,,,,,,,,,,,,,,,,,
+ByteDance,Byte Dance,,,,,,,,,,,,,,,,,,,,,,,
+CEA-LETI,,,,,,,,,,,,,,,,,,,,,,,,
+CMU Qatar,,,,,,,,,,,,,,,,,,,,,,,,
+CU Boulder,UC Boulder,,,,,,,,,,,,,,,,,,,,,,,
+Cadence,Cadence Design Systems,,,,,,,,,,,,,,,,,,,,,,,
+Carnegie Mellon University; ETH Zurich,,ETH Zurich and CMU,,,,,,,,,,,,,,,,,,,,,,
+Centaur Technology,,,,,,,,,,,,,,,,,,,,,,,,
+Cerebras,,,,,,,,,,,,,,,,,,,,,,,,
+Chongqing University,,,,,,,,,,,,,,,,,,,,,,,,
+Christmann,,,,,,,,,,,,,,,,,,,,,,,,
+Cisco,,,,,,,,,,,,,,,,,,,,,,,,
+Citadel Investment Group,,,,,,,,,,,,,,,,,,,,,,,,
+Clemson,,,,,,,,,,,,,,,,,,,,,,,,
+Cloudflare,,,,,,,,,,,,,,,,,,,,,,,,
+Collins,Rockwell Collins,,,,,,,,,,,,,,,,,,,,,,,
+Colorado School of Mines,Mines,,,,,,,,,,,,,,,,,,,,,,,
+Cray Computer,,,,,,,,,,,,,,,,,,,,,,,,
+Cruise,,,,,,,,,,,,,,,,,,,,,,,,
+D. E. Shaw,D.E. Shaw Research,,,,,,,,,,,,,,,,,,,,,,,
+DELL,Dell,,,,,,,,,,,,,,,,,,,,,,,
+DGIST,,,,,,,,,,,,,,,,,,,,,,,,
+DOE,,,,,,,,,,,,,,,,,,,,,,,,
+Dankook University,,,,,,,,,,,,,,,,,,,,,,,,
+DeepMind,,,,,,,,,,,,,,,,,,,,,,,,
+Delaware,University of Delaware,,,,,,,,,,,,,,,,,,,,,,,
+Sharif University of Technology; Tehran; Iran,Sharif, Sharif University of Technology,,,,,,,,,,,,,,,,,,,,,,
+Sharif University of Technology; IPM,,,,,,,,,,,,,,,,,,,,,,,,
+Shiraz University,,,,,,,,,,,,,,,,,,,,,,,,
+Singapore University of Technology and Design,,,,,,,,,,,,,,,,,,,,,,,,
+Disney Research Pittsburgh,,,,,,,,,,,,,,,,,,,,,,,,
+Dropbox,,,,,,,,,,,,,,,,,,,,,,,,
+EMC,,,,,,,,,,,,,,,,,,,,,,,,
+ETRI,,,,,,,,,,,,,,,,,,,,,,,,
+Ecole Centrale de Lyon; France,Ecole Centrale de Lyon,Ecole Centrale de Lyon France,,,,,,,,,,,,,,,,,,,,,,
+Ecole Polytechnique Montreal; Canada,Ecole Polytechnique Montreal Canada,,,,,,,,,,,,,,,,,,,,,,,
+Eindhoven University of Technology,,,,,,,,,,,,,,,,,,,,,,,,
+Ericsson,,,,,,,,,,,,,,,,,,,,,,,,
+Elegant Start Inc,,,,,,,,,,,,,,,,,,,,,,,,
+Emory,,,,,,,,,,,,,,,,,,,,,,,,
+Esperanto,,,,,,,,,,,,,,,,,,,,,,,,
+FORTH,FORTH/NTUA,,,,,,,,,,,,,,,,,,,,,,,
+Flemish government,,,,,,,,,,,,,,,,,,,,,,,,
+Flowserve,,,,,,,,,,,,,,,,,,,,,,,,
+Fraunhofer,Fraunhofer AISEC,,,,,,,,,,,,,,,,,,,,,,,
+Freescale,Freescale Semiconductor,,,,,,,,,,,,,,,,,,,,,,,
+Fudan University,,,,,,,,,,,,,,,,,,,,,,,,
+GD,,,,,,,,,,,,,,,,,,,,,,,,
+GMU,,,,,,,,,,,,,,,,,,,,,,,,
+GTech,,,,,,,,,,,,,,,,,,,,,,,,
+General Motors,,,,,,,,,,,,,,,,,,,,,,,,
+Gent,,,,,,,,,,,,,,,,,,,,,,,,
+Glasgow,University of Glasgow,,,,,,,,,,,,,,,,,,,,,,,
+GlobalFoundries,,,,,,,,,,,,,,,,,,,,,,,,
+Goerge Washington,,,,,,,,,,,,,,,,,,,,,,,,
+Goldman Sachs,,,,,,,,,,,,,,,,,,,,,,,,
+Graphen,,,,,,,,,,,,,,,,,,,,,,,,
+Graz,Graz University of Technology,,,,,,,,,,,,,,,,,,,,,,,
+Vienna University of Technology,,,,,,,,,,,,,,,,,,,,,,,,
+HKUST,,,,,,,,,,,,,,,,,,,,,,,,
+HPE,,,,,,,,,,,,,,,,,,,,,,,,
+HZI,,,,,,,,,,,,,,,,,,,,,,,,
+Habana Labs,,,,,,,,,,,,,,,,,,,,,,,,
+Hannam Univ.,,,,,,,,,,,,,,,,,,,,,,,,
+Hanyang University,,,,,,,,,,,,,,,,,,,,,,,,
+Harvard Medical School,,,,,,,,,,,,,,,,,,,,,,,,
+IBM Austin,ibm,,,,,,,,,,,,,,,,,,,,,,,
+IBM Research-Almaden,ibm,,,,,,,,,,,,,,,,,,,,,,,
+IISc Banglore,,,,,,,,,,,,,,,,,,,,,,,,
+IIT Delhi,,,,,,,,,,,,,,,,,,,,,,,,
+IIT Gandhinagar,,,,,,,,,,,,,,,,,,,,,,,,
+IIT Hyderabad,,,,,,,,,,,,,,,,,,,,,,,,
+IIT Kampur,,,,,,,,,,,,,,,,,,,,,,,,
+IMDEA,,,,,,,,,,,,,,,,,,,,,,,,
+IMEC,,,,,,,,,,,,,,,,,,,,,,,,
+ISR,,,,,,,,,,,,,,,,,,,,,,,,
+IST-Lisboa; INESC-ID,,,,,,,,,,,,,,,,,,,,,,,,
+ITRI,,,,,,,,,,,,,,,,,,,,,,,,
+Imagination Technologies,,,,,,,,,,,,,,,,,,,,,,,,
+Imperial College,Imperial College London,Imperial College; Lodon,Imperial College; London,,,,,,,,,,,,,,,,,,,,,
+InSilixa,,,,,,,,,,,,,,,,,,,,,,,,
+Independent Consultant,consultant,,,,,,,,,,,,,,,,,,,,,,,
+Indiana,indiana university bloomington,Indiana University Bloomington,Indiana University,,,,,,,,,,,,,,,,,,,,,
+Infineon Technologies AG,,,,,,,,,,,,,,,,,,,,,,,,
+Institute for Research in Fundamental Sciences,IPM,Institute for Research in Fundamental Sciences - IPM,,,,,,,,,,,,,,,,,,,,,,
+Institute of Information Engineering; Chinese Academy of Sciences,chinese academy of sciences,,,,,,,,,,,,,,,,,,,,,,,
+Intertrust,,,,,,,,,,,,,,,,,,,,,,,,
+Iowa State,,,,,,,,,,,,,,,,,,,,,,,,
+Irell & Manella,,,,,,,,,,,,,,,,,,,,,,,,
+Istanbul Kemerburgaz University,,,,,,,,,,,,,,,,,,,,,,,,
+Itineris,,,,,,,,,,,,,,,,,,,,,,,,
+Iran University of Science and Technology,,,,,,,,,,,,,,,,,,,,,,,,
+Islamic Azad University,,,,,,,,,,,,,,,,,,,,,,,,
+Japan National Police Agency,,,,,,,,,,,,,,,,,,,,,,,,
+Jilin University,,,,,,,,,,,,,,,,,,,,,,,,
+Johannes Gutenberg-Universitat Mainz,,,,,,,,,,,,,,,,,,,,,,,,
+Johannes Kepler University,,,,,,,,,,,,,,,,,,,,,,,,
+Johns Hopkins University,,,,,,,,,,,,,,,,,,,,,,,,
+JHK University,,,,,,,,,,,,,,,,,,,,,,,,
+Juniper,,,,,,,,,,,,,,,,,,,,,,,,
+KAUST,,,,,,,,,,,,,,,,,,,,,,,,
+KNT; Iran,,,,,,,,,,,,,,,,,,,,,,,,
+KNU,,,,,,,,,,,,,,,,,,,,,,,,
+Katholieke Universiteit Leuven,KU Leuven,,,,,,,,,,,,,,,,,,,,,,,
+Kings College London,,,,,,,,,,,,,,,,,,,,,,,,
+Korea Army Academy at Yeong-cheon,,,,,,,,,,,,,,,,,,,,,,,,
+Kuka Robotics,,,,,,,,,,,,,,,,,,,,,,,,
+Kwangwoon University,,,,,,,,,,,,,,,,,,,,,,,,
+Kyoto University,,,,,,,,,,,,,,,,,,,,,,,,
+LANL,,,,,,,,,,,,,,,,,,,,,,,,
+LMS,,,,,,,,,,,,,,,,,,,,,,,,
+LSU,,,,,,,,,,,,,,,,,,,,,,,,
+Lafayette,,,,,,,,,,,,,,,,,,,,,,,,
+University of Louisiana at Lafayette,,,,,,,,,,,,,,,,,,,,,,,,
+Landing AI,,,,,,,,,,,,,,,,,,,,,,,,
+Latham and Watkins LLP,,,,,,,,,,,,,,,,,,,,,,,,
+Lehigh,Lehigh University,,,,,,,,,,,,,,,,,,,,,,,
+Lenovo,,,,,,,,,,,,,,,,,,,,,,,,
+Likun,,,,,,,,,,,,,,,,,,,,,,,,
+Lion Semi,,,,,,,,,,,,,,,,,,,,,,,,
+Los Alamos National Labs,,,,,,,,,,,,,,,,,,,,,,,,
+Lubeck,,,,,,,,,,,,,,,,,,,,,,,,
+MIS,,,,,,,,,,,,,,,,,,,,,,,,
+MPI-SWS,,,,,,,,,,,,,,,,,,,,,,,,
+MSRA,,,,,,,,,,,,,,,,,,,,,,,,
+Manchester,,,,,,,,,,,,,,,,,,,,,,,,
+Marvell,,,,,,,,,,,,,,,,,,,,,,,,
+MathWorks,,,,,,,,,,,,,,,,,,,,,,,,
+Max Planck Institute,,,,,,,,,,,,,,,,,,,,,,,,
+Maxeler,,,,,,,,,,,,,,,,,,,,,,,,
+MediaTek,,,,,,,,,,,,,,,,,,,,,,,,
+Mentor Graphics,,,,,,,,,,,,,,,,,,,,,,,,
+Microdisplay,,,,,,,,,,,,,,,,,,,,,,,,
+Microsoft,Microsoft Corporation,,,,,,,,,,,,,,,,,,,,,,,
+McMaster,,,,,,,,,,,,,,,,,,,,,,,,
+MongoDB,,,,,,,,,,,,,,,,,,,,,,,,
+Mozilla,,,,,,,,,,,,,,,,,,,,,,,,
+Multicoreware Inc.,,,,,,,,,,,,,,,,,,,,,,,,
+Murcia,University of Murcia,Universidad de Murcia,,,,,,,,,,,,,,,,,,,,,,
+Myricom,,,,,,,,,,,,,,,,,,,,,,,,
+Myrtle,,,,,,,,,,,,,,,,,,,,,,,,
+Mythic,,,,,,,,,,,,,,,,,,,,,,,,
+NASA,,,,,,,,,,,,,,,,,,,,,,,,
+ND,,,,,,,,,,,,,,,,,,,,,,,,
+NEC Lab,NEC Labs,,,,,,,,,,,,,,,,,,,,,,,
+NSF; Umass,NSF/Umass,,,,,,,,,,,,,,,,,,,,,,,
+NTT,,,,,,,,,,,,,,,,,,,,,,,,
+NTUA,,,,,,,,,,,,,,,,,,,,,,,,
+NVIDIA Research,nvidia,Nvidia Research,,,,,,,,,,,,,,,,,,,,,,
+Nanjing University,,,,,,,,,,,,,,,,,,,,,,,,
+National Instrument,,,,,,,,,,,,,,,,,,,,,,,,
+NetBase Solutions,,,,,,,,,,,,,,,,,,,,,,,,
+New Relic,,,,,,,,,,,,,,,,,,,,,,,,
+New York University,,,,,,,,,,,,,,,,,,,,,,,,
+University of New Hampshire,,,,,,,,,,,,,,,,,,,,,,,,
+Nokia,,,,,,,,,,,,,,,,,,,,,,,,
+Northrup Grumman,,,,,,,,,,,,,,,,,,,,,,,,
+Nuro,,,,,,,,,,,,,,,,,,,,,,,,
+Oculus,,,,,,,,,,,,,,,,,,,,,,,,
+Oxford,,,,,,,,,,,,,,,,,,,,,,,,
+PKU,,,,,,,,,,,,,,,,,,,,,,,,
+PernixData,,,,,,,,,,,,,,,,,,,,,,,,
+Perspecta Labs,,,,,,,,,,,,,,,,,,,,,,,,
+Polito,,,,,,,,,,,,,,,,,,,,,,,,
+Polytecnico di Milano,,,,,,,,,,,,,,,,,,,,,,,,
+Portland State University,,,,,,,,,,,,,,,,,,,,,,,,
+Queens,Queens University Belfast,,,,,,,,,,,,,,,,,,,,,,,
+Quilt Data,,,,,,,,,,,,,,,,,,,,,,,,
+Raytheon,,,,,,,,,,,,,,,,,,,,,,,,
+Real World Technologies,,,,,,,,,,,,,,,,,,,,,,,,
+Red Hat,Redhat,,,,,,,,,,,,,,,,,,,,,,,
+Renmin University of China,,,,,,,,,,,,,,,,,,,,,,,,
+RepRisk AG,,,,,,,,,,,,,,,,,,,,,,,,
+Reykjavik University,,,,,,,,,,,,,,,,,,,,,,,,
+Robust Chip,Robust Chip; Inc.,,,,,,,,,,,,,,,,,,,,,,,
+SIAT,,,,,,,,,,,,,,,,,,,,,,,,
+SK Hynix,,,,,,,,,,,,,,,,,,,,,,,,
+SMI,,,,,,,,,,,,,,,,,,,,,,,,
+SNU,,,,,,,,,,,,,,,,,,,,,,,,
+SUNY Stonybrook,stony brook university,STONY,Stonybrook,,,,,,,,,,,,,,,,,,,,,
+Salesforce,,,,,,,,,,,,,,,,,,,,,,,,
+SambaNova,,,,,,,,,,,,,,,,,,,,,,,,
+San Jose State University,,,,,,,,,,,,,,,,,,,,,,,,
+SanDisk,Sandisk,,,,,,,,,,,,,,,,,,,,,,,
+Seagate,Seagate Technology,,,,,,,,,,,,,,,,,,,,,,,
+Semiconductor Research Corporation,,,,,,,,,,,,,,,,,,,,,,,,
+SiFive,,,,,,,,,,,,,,,,,,,,,,,,
+Southern Methodist University,,,,,,,,,,,,,,,,,,,,,,,,
+Spoke,,,,,,,,,,,,,,,,,,,,,,,,
+Square,,,,,,,,,,,,,,,,,,,,,,,,
+St Andrews,,,,,,,,,,,,,,,,,,,,,,,,
+Starflow,,,,,,,,,,,,,,,,,,,,,,,,
+Startup,startup,,,,,,,,,,,,,,,,,,,,,,,
+Stuart Haber Crypto,,,,,,,,,,,,,,,,,,,,,,,,
+SungKyunKwan University,Sungkyunkwan University,,,,,,,,,,,,,,,,,,,,,,,
+Synopsys,,,,,,,,,,,,,,,,,,,,,,,,
+TGGS,,,,,,,,,,,,,,,,,,,,,,,,
+TU Delft,,,,,,,,,,,,,,,,,,,,,,,,
+TU Dresden,TUD,Technische Universitat Dresden,,,,,,,,,,,,,,,,,,,,,,
+TU Graz,,,,,,,,,,,,,,,,,,,,,,,,
+TU Kaiserslautern,University of Kaiserslautern,,,,,,,,,,,,,,,,,,,,,,,
+TabletWise,,,,,,,,,,,,,,,,,,,,,,,,
+Technical Univeristy of Valencia,,,,,,,,,,,,,,,,,,,,,,,,
+Technische Universitat Berlin,,,,,,,,,,,,,,,,,,,,,,,,
+Tel Aviv University,University of Tel-Aviv,,,,,,,,,,,,,,,,,,,,,,,
+Tencent,,,,,,,,,,,,,,,,,,,,,,,,
+Tesla,,,,,,,,,,,,,,,,,,,,,,,,
+Thalchemy,,,,,,,,,,,,,,,,,,,,,,,,
+The Laboratory for Physical Sciences,The Laboratory for Physical Sciences - LPS,,,,,,,,,,,,,,,,,,,,,,,
+Tokyo Tech,,,,,,,,,,,,,,,,,,,,,,,,
+Toshiba,,,,,,,,,,,,,,,,,,,,,,,,
+Tower Research Capital,,,,,,,,,,,,,,,,,,,,,,,,
+Toyota Research Institute,,,,,,,,,,,,,,,,,,,,,,,,
+Twitter,,,,,,,,,,,,,,,,,,,,,,,,
+Two Sigma,,,,,,,,,,,,,,,,,,,,,,,,
+U Lahore,,,,,,,,,,,,,,,,,,,,,,,,
+U Maryland,University of Maryland,,,,,,,,,,,,,,,,,,,,,,,
+U. Buffalo,,,,,,,,,,,,,,,,,,,,,,,,
+U. of Colorado; Denver,,,,,,,,,,,,,,,,,,,,,,,,
+U. of Mississippi,,,,,,,,,,,,,,,,,,,,,,,,
+UBI,,,,,,,,,,,,,,,,,,,,,,,,
+UCCS,,,,,,,,,,,,,,,,,,,,,,,,
+UCL,,,,,,,,,,,,,,,,,,,,,,,,
+UCY,,,,,,,,,,,,,,,,,,,,,,,,
+UChicago,,,,,,,,,,,,,,,,,,,,,,,,
+UConn,,,,,,,,,,,,,,,,,,,,,,,,
+UFRGS,,,,,,,,,,,,,,,,,,,,,,,,
+UMBC,,,,,,,,,,,,,,,,,,,,,,,,
+UMD,,,,,,,,,,,,,,,,,,,,,,,,
+UNC,,,,,,,,,,,,,,,,,,,,,,,,
+UNH,,,,,,,,,,,,,,,,,,,,,,,,
+UNSW,,,,,,,,,,,,,,,,,,,,,,,,
+UPV,,,,,,,,,,,,,,,,,,,,,,,,
+UPenn,,,,,,,,,,,,,,,,,,,,,,,,
+US Naval Research Lab,,,,,,,,,,,,,,,,,,,,,,,,
+UTA,,,,,,,,,,,,,,,,,,,,,,,,
+UVic,,,,,,,,,,,,,,,,,,,,,,,,
+UW Seattle,,,,,,,,,,,,,,,,,,,,,,,,
+Uber,,,,,,,,,,,,,,,,,,,,,,,,
+Uni Bielefeld,,,,,,,,,,,,,,,,,,,,,,,,
+UniNE,,,,,,,,,,,,,,,,,,,,,,,,
+Univ of Jordan,,,,,,,,,,,,,,,,,,,,,,,,
+Univ. of Louisiana,University of Louisiana,,,,,,,,,,,,,,,,,,,,,,,
+Univ. of Sydney,University of Sydney,Sydney,,,,,,,,,,,,,,,,,,,,,,
+Univ. of Utah,university of utah,,,,,,,,,,,,,,,,,,,,,,,
+Univeristy of Bologna,,,,,,,,,,,,,,,,,,,,,,,,
+University College London,,,,,,,,,,,,,,,,,,,,,,,,
+University of Bielefeld,,,,,,,,,,,,,,,,,,,,,,,,
+University of Colorado,University of Colorado at Boulder,University of Colorado-Boulder,University of Colorado; Boulder,,,,,,,,,,,,,,,,,,,,,
+University of Glascow,,,,,,,,,,,,,,,,,,,,,,,,
+University of Jordan,,,,,,,,,,,,,,,,,,,,,,,,
+University of Malaga,,,,,,,,,,,,,,,,,,,,,,,,
+University of Missouri,,,,,,,,,,,,,,,,,,,,,,,,
+Missouri University of Science and Technology,,,,,,,,,,,,,,,,,,,,,,,,
+University of Murcia,,,,,,,,,,,,,,,,,,,,,,,,
+University of Neuchatel,Universite de Neuchatel,,,,,,,,,,,,,,,,,,,,,,,
+University of Norte Dame,,,,,,,,,,,,,,,,,,,,,,,,
+University of North Carolina at Charlotte,University of North Carolina,,,,,,,,,,,,,,,,,,,,,,,
+University of Thessaly,,,,,,,,,,,,,,,,,,,,,,,,
+VMWare Research,vmware,VMware Research Group,VMware research,VMware Research,,,,,,,,,,,,,,,,,,,,
+VU Amsterdam,Vrije Universiteit Amsterdam,,,,,,,,,,,,,,,,,,,,,,,
+Vancouver labs,,,,,,,,,,,,,,,,,,,,,,,,
+Vector Institute,,,,,,,,,,,,,,,,,,,,,,,,
+Veridian Res. Inst. Mich.,,,,,,,,,,,,,,,,,,,,,,,,
+Virginia Polytechnic Institute and State University,VaTech,,,,,,,,,,,,,,,,,,,,,,,
+Virginia Tech,,,,,,,,,,,,,,,,,,,,,,,,
+Visa,,,,,,,,,,,,,,,,,,,,,,,,
+WPI,,,,,,,,,,,,,,,,,,,,,,,,
+WUSTL,,,,,,,,,,,,,,,,,,,,,,,,
+Wellesley,,,,,,,,,,,,,,,,,,,,,,,,
+Wichita State,,,,,,,,,,,,,,,,,,,,,,,,
+Wipro,,,,,,,,,,,,,,,,,,,,,,,,
+Wolfe Consulting,,,,,,,,,,,,,,,,,,,,,,,,
+Xerox,,,,,,,,,,,,,,,,,,,,,,,,
+Xilinx,,,,,,,,,,,,,,,,,,,,,,,,
+Yahoo,,,,,,,,,,,,,,,,,,,,,,,,
+Zytek Communications Corporation,,,,,,,,,,,,,,,,,,,,,,,,
+dividiti,,,,,,,,,,,,,,,,,,,,,,,,
+quilt.io,,,,,,,,,,,,,,,,,,,,,,,,
+EPFL,Ecole polytechnique federale de Lausanne,,,,,,,,,,,,,,,,,,,,,,,
+Chinese Academy of Military Science,,,,,,,,,,,,,,,,,,,,,,,,
+french institute for research in computer science and automation,,,,,,,,,,,,,,,,,,,,,,,,
+polytechnic of California santa barbara,,,,,,,,,,,,,,,,,,,,,,,,
+louisiana state university,,,,,,,,,,,,,,,,,,,,,,,,

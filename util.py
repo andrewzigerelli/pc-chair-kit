@@ -11,6 +11,7 @@ def copy_dic(in_dic, out_dic, schema):
 def iterate_csv(filename, encoding=""):
     if not encoding:
         encoding = 'latin-1'
+        encoding = 'windows-1252'
     with open(filename, newline='', encoding=encoding) as csvfile:
         csv_it = csv.reader(csvfile)
         next(csv_it, None)

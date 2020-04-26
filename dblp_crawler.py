@@ -14,6 +14,17 @@ from tqdm import tqdm
 
 from util import copy_dic, read_csv, write_csv
 
+def do_cache(cache):
+    print("backup_ctr", cache.backup_ctr)
+    print("path", cache.path)
+#    print("backup_ctr", cache2.backup_ctr)
+#    print("path", cache2.path)
+#    for k in cache2.queries:
+#        if k not in cache.queries:
+#            cache.queries[k] = cache2.queries[k]
+#            print('not there')
+
+
 
 def sanitize_text(text):
     text = unidecode.unidecode(html.unescape(text.decode('ascii')))
@@ -45,7 +56,7 @@ class Cache(object):
         if os.path.exists(path):
             try:
                 with open(path, "rb") as f:
-                    cache = pickle.load(f, errors="strict")
+                    cache = pickle.load(f) 
                 return cache
             except Exception as ex:
                 print("Problem loading paper cache, with exception",
@@ -71,10 +82,12 @@ class Cache(object):
             return None
 
 
-cache = Cache.load('data/.cache_queries')
+
+#cache = Cache.load('data/.cache_queries')
+#cache2 = Cache.load('cachedir/cache_queries')
 
 
-def save_cache():
+def save_cache(cache):
     cache.backup_and_save(True)
 
 
@@ -106,12 +119,43 @@ def request_dblp(query):
                 raise err
         except Exception as err:
             print("Something bad happend:", str(err))
-            print(raw_str)
-            raise err
+            return 0
 
     # woops we failed
     raise Exception("Something wrong happened, we run out of tries")
 
+def request_dblp2(query, cache):
+    url = ('http://dblp.uni-trier.de/%s' % query)
+
+    num_retries = 2
+    while num_retries > 0:
+        try:
+            if query in cache:
+                raw_str = cache.get_query(query)
+            else:
+                resource = urllib.request.urlopen(url)
+                raw_str = resource.read()
+                cache.add_query(query, raw_str)
+                cache.backup_and_save()
+
+            raw_str = sanitize_text(raw_str)
+            return xmltodict.parse(raw_str)
+
+        except urllib.error.HTTPError as err:
+            if err.code == 429:
+                print("HTTP error code", err.code, "reason:", err.reason,
+                      "will wait:", err.headers['Retry-After'])
+                wait = int(err.headers['Retry-After'])
+                sleep(wait + 10)
+                num_retries -= 1
+            else:
+                raise err
+        except Exception as err:
+            print("Something bad happend:", str(err))
+            return 0
+
+    # woops we failed
+    raise Exception("Something wrong happened, we run out of tries")
 
 def request_author_key(author):
     data = request_dblp('search/author?xauthor="%s"' %
@@ -130,6 +174,7 @@ def make_author_link(key):
 
 
 def request_publication_keys(author_key):
+    print('here')
     data = request_dblp('rec/pers/%s/xk' %
                         author_key)
     return data['dblpperson']['dblpkey'][1:]
@@ -180,6 +225,11 @@ def read_pub(pub_xml):
 def request_publication(key):
     xmldict = request_dblp('rec/bibtex/%s.xml' % key)
     rdfdict = request_dblp('rec/rdf/%s.rdf' % key)
+    return xmldict, rdfdict
+
+def request_publication2(key, cache):
+    xmldict = request_dblp2('rec/bibtex/%s.xml' % key, cache)
+    rdfdict = request_dblp2('rec/rdf/%s.rdf' % key, cache)
     return xmldict, rdfdict
 
 
@@ -306,7 +356,8 @@ def get_co_authors(paper_csv):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("mode", choices=["author-keys", "paper-lists",
-                                         "list-co-authors", "get-conflicts"])
+                                         "list-co-authors", "get-conflicts",
+                                         "cache"])
     parser.add_argument("--author-list", help="List with author names")
     parser.add_argument("--author-keys",
                         help="List with author keys to be searched")
@@ -369,8 +420,12 @@ def main():
         for k, v in papers_dic.items():
             print(k)
             print(v)
+    elif args.mode == 'cache':
+        cache = Cache.load('data/.cache_queries')
+        do_cache(cache)
+        save_cache(cache)
+
 
 
 if __name__ == '__main__':
     main()
-    save_cache()

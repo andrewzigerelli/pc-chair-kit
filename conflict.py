@@ -1,8 +1,10 @@
-from base import Person, Institutions
 import re
 
+from base import Institutions, Person
 
-def parse_line(line):
+institute_regex= re.compile("(\s*[,:\-\(])([A-za-z0-9 ]*)(\))")
+
+def parse_line(line, insts=None, DEBUG=False):
     """
     Line formats supported:
     name [-;, ] [(]institution[)] [-;, ] reason (promptly ignored)
@@ -12,7 +14,7 @@ def parse_line(line):
                  'collaborators', 'coi', 'paper', 'institutional', 'student', 'co-authors']
 
     institution_indication = ['university', 'institute', 'college']
-    
+
     line = line.strip('"')
     name_regex = "\s*\w+\-?'?\w*\.?\&?\s*"
 
@@ -26,22 +28,32 @@ def parse_line(line):
         s, e = g.span()
         name = line[s:e].strip()
         if name.lower() in blacklist:
-            raise ValueError("Bad name in string: %s, line: %s" % (name, original_line))
+            raise ValueError("Bad name in string: %s, line: %s" %
+                             (name, original_line))
         names += name + " "
         line = line[e:]
         g = re.match(name_regex, line)
-
+    
     if names.strip().lower() == 'none':
         return None, None
 
-    if re.match("\s*[,;:\-\(]", line, re.IGNORECASE):
+    # if re.match("\s*[,;:\-\(]", line, re.IGNORECASE):
+    res = institute_regex.match(line)
+    if res:
         # This is a name, make sure there is no warning:
         for i in institution_indication:
             if i.lower() in names.lower():
-                raise ValueError("Conflict looks like university: %s, line: %s" % (name, original_line))
+                raise ValueError(
+                    "Conflict looks like university: %s, line: %s" % (name, original_line))
+        if insts:
+            inst_str = insts.get_inst(inst=res.groups(1)[1])
+            return names.strip() + str(inst_str), None
         return names.strip(), None
     else:
-        return None, names.strip()
+        print("WARNING: parsed collaborator as %s\n" % names.strip())
+        print("WARNING: parsed institute as %s\n" % "None")
+        #return None, names.strip() old version
+        return names.strip(), None
 
     raise ValueError("Can't parse line: %s" % original_line)
 
@@ -99,10 +111,10 @@ class ConflictSet(object):
             return ""
 
         s = ""
-        for i,r in zip(self._d, self._reasons):
+        for i, r in zip(self._d, self._reasons):
             if r:
                 s += ("- %s; %s\n" % (str(i), r))
-            else:    
+            else:
                 s += ("- %s\n" % str(i))
 
         return s
@@ -123,43 +135,52 @@ class ConflictSet(object):
     def __bool__(self):
         return True if self._d else False
 
+
 class BaseConflicts(object):
-    def __init__(self, institution, collaborators_str=""):
+    def __init__(self, institution, collaborators_str="", DEBUG=False):
         """ Parse collaborators string """
         self.collabs = ConflictSet()
         self.institutions = ConflictSet()
         self.insts = institution
         self.bad_data = False
         # handle empty collaborators, which is passed as empty
-        # list 
+        # list
         if isinstance(collaborators_str, list):
             if not collaborators_str:
-                collaborators_str=""
+                collaborators_str = ""
         lines = collaborators_str.strip().splitlines()
         for line in lines:
-            name, institution = parse_line(line)
+            name, institution = parse_line(line, self.insts, DEBUG)
+            if DEBUG:
+                print("DEBUGGING")
+                print("name %s\n" % name)
+                print("institution %s\n" % institution)
             if institution:
                 self.add_institution(institution)
-            elif name:
+            if name:
                 self.add_co_author(name)
 
     def __iter__(self):
         for d in self.collabs:
             yield d
-                
+
     def add_institution(self, inst):
         if isinstance(inst, BaseConflicts):
-            raise ValueError("Trying to add a conflict list to a conflict list")
+            raise ValueError(
+                "Trying to add a conflict list to a conflict list")
         if isinstance(inst, ConflictSet):
-            raise ValueError("Trying to add a conflict list to a conflict list")
-        
+            raise ValueError(
+                "Trying to add a conflict list to a conflict list")
+
         self.institutions.add(self.insts.get_inst(inst))
 
     def add_co_author(self, a):
         if isinstance(a, ConflictSet):
-            raise ValueError("Trying to add a conflict list to a conflict list")
+            raise ValueError(
+                "Trying to add a conflict list to a conflict list")
         if isinstance(a, BaseConflicts):
-            raise ValueError("Trying to add a conflict list to a conflict list")
+            raise ValueError(
+                "Trying to add a conflict list to a conflict list")
         if isinstance(a, Person):
             p = a
         else:
@@ -185,10 +206,12 @@ class BaseConflicts(object):
             (c, r) = i
             out.collabs.add(c, r)
         return out
-    
+
     def find_conflicts(self, other):
         collabs = self.find_collab_conflicts(other)
         insts = self.find_institution_conflicts(other)
+        #print(collabs)
+        #print(insts)
 
         collabs.merge_inst_conflicts(insts)
         return collabs
@@ -198,7 +221,7 @@ class BaseConflicts(object):
 
     def merge_collab_conflicts(self, other):
         self.collabs.merge(other.collabs)
-    
+
     def match_institution(self, inst):
         return self.institutions.match(inst)
 
@@ -227,13 +250,13 @@ class BaseConflicts(object):
         return True if self.collabs or self.institutions else False
 
     def __str__(self):
-        s= ""
+        s = ""
         if self.institutions:
-            s+= "Institutions:\n"
-            s+= str(self.institutions)
+            s += "Institutions:\n"
+            s += str(self.institutions)
         if self.collabs:
-            s+= "Collaborators:\n"
-            s+= str(self.collabs)
+            s += "Collaborators:\n"
+            s += str(self.collabs)
         return s
 
     def str_no_linebreaks(self):
@@ -244,4 +267,3 @@ class BaseConflicts(object):
             s += "collaborators:[%s]" % self.collabs.str_no_linebreaks()
 
         return s
-        

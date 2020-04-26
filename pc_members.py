@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
-from tqdm import tqdm
-from util import iterate_csv, get_dict_json, save_dict_json
-from dblp_crawler import (request_publication, sanitize_titles,
-                          sanitize_coauthors, save_cache)
-from base import Person, Institutions
-from conflict import BaseConflicts
 from copy import deepcopy
 from functools import reduce
+
+from tqdm import tqdm
+
+from base import Institutions, Person
+from conflict import BaseConflicts
+from dblp_crawler import (request_publication, request_publication2,
+                          sanitize_coauthors, sanitize_titles, save_cache)
+from util import get_dict_json, iterate_csv, save_dict_json
 
 
 class Publication(object):
@@ -24,6 +26,14 @@ class Publication(object):
     @classmethod
     def from_key(cls, key, institutions):
         xml, rdf = request_publication(key)
+        if xml:
+            return cls.from_xml(xml, rdf, institutions)
+        else:
+            return None
+
+    @classmethod
+    def from_key2(cls, key, institutions, cache):
+        xml, rdf = request_publication2(key, cache)
         if xml:
             return cls.from_xml(xml, rdf, institutions)
         else:
@@ -111,7 +121,22 @@ class Submission(Publication):
         self.reviewers = []
 
     def __str__(self):
-        return "%d " % self.pid + super().__str__()
+        my_str = ""
+        for x, y in self.__dict__.items():
+            my_str = my_str + x + '\n'
+            if x == 'pc_member_collabs_field_cs':
+                for t in y:
+                    my_str = my_str + t + '\n'
+            elif x == 'collabs_field_cs':
+                for t, t_val in y.items():
+                    my_str = my_str + t + ' : ' + t_val + '\n'
+            elif x == 'dblp_cs' or x == 'reviewers':
+                my_str = my_str + '\n'.join(y) + '\n'
+            else:
+                my_str = my_str + str(y) + '\n'
+            my_str = my_str + '\n'
+        return my_str
+        # return "%d \n %s" % (self.pid, self.authors) + super().__str__()
 
     @classmethod
     def from_json(cls, json_dic, institutions):
@@ -135,16 +160,37 @@ class Submission(Publication):
 
         collaborators = (json_dic['collaborators']
                          if 'collaborators' in json_dic else '')
+        # HACK TO FIX COLLABORATORS
+        # REPLACE _STUFF_ after comma with (STUFF)
+        # USED BECAUSE THE PARSE LOGIC IS SLOPPY
+        if not collaborators:
+            collaborators = ''
+        collab_list = collaborators.split('\n')
+        new_collab_list = []
+        for c_ in collab_list:
+            comma_loc = c_.find(',')
+            if comma_loc > -1:
+                name_ = c_[:comma_loc].strip().lstrip()
+                inst_ = " (" + c_[comma_loc+1:].strip().lstrip() + ")"
+                new_collab_list.append(name_ + inst_)
+            else:
+                new_collab_list.append(c_)
+        collaborators = '\n'.join(new_collab_list)
 
         return cls(json_dic['pid'], json_dic['title'], authors, affiliations,
                    institutions, pc_conflicts, collaborators)
 
     def add_collaborator_conflict(self, pc_member):
+
+        # if the pc member on this paper, he/she is not defined as a conflict
+        # for this case, he/she is a "proper_conflict" handled elsewhere
         if pc_member.email in self.declared_pc:
             return
 
         # Check if pc_member is in paper conflict list
-        match = self.conflicts.match_co_author(pc_member.name)
+        search_str = pc_member.name + str(pc_member.affiliation)
+        #match = self.conflicts.match_co_author(pc_member.name)
+        match = self.conflicts.match_co_author(search_str)
         if match:
             self.collabs_field_cs[pc_member.email] = match
 
@@ -156,10 +202,12 @@ class Submission(Publication):
             return c
 
         # Check if pc_member institutions match authors institutions
-        c.merge_inst_conflicts(self.conflicts.find_institution_conflicts(pc_member.conflicts))
+        c.merge_inst_conflicts(
+            self.conflicts.find_institution_conflicts(pc_member.conflicts))
 
         # Check if any author match something in the pc_member conflicts
-        c.merge_collab_conflicts(self.authors.find_collab_conflicts(pc_member.conflicts))
+        c.merge_collab_conflicts(
+            self.authors.find_collab_conflicts(pc_member.conflicts))
 
         return c
 
@@ -193,15 +241,19 @@ class Submission(Publication):
         claimed_1 = self.declared_pc
         claimed_2 = self.collabs_field_cs
 
+        # if str(pc_member_hotcrp) == "Yale Patt":
+        # print(pc_member_hotcrp.email)
+
         email = pc_member_hotcrp.email
+        name = pc_member_hotcrp.first + " " + pc_member_hotcrp.last
         if ((email in claimed_1 or
              email in claimed_2) and
-           not (golden_hotcrp or golden_dblp)):
+                not (golden_hotcrp or golden_dblp)):
 
             if email in claimed_1:
-                self.fake_conflicts[email] = "pc_conflicts"
+                self.fake_conflicts[email] = "pc_conflicts" + " " + name
             elif email in claimed_2:
-                self.fake_conflicts[email] = "collaborators"
+                self.fake_conflicts[email] = "collaborators" + " " + name
             else:
                 raise ValueError("What is going on pal?")
 
@@ -234,6 +286,7 @@ class Submission(Publication):
 class PCMember(Person):
     def __init__(self, first, last, email, tags, affiliation,
                  topics, institutions, collaborators="", key=""):
+        DEBUG = False
         name = "%s %s" % (first, last)
         super().__init__(name, key)
         self.first = first
@@ -242,14 +295,14 @@ class PCMember(Person):
         self.tags = tags
         self.insts = institutions
         self.affiliation = institutions.get_inst(affiliation)
-        self.conflicts = BaseConflicts(institutions, collaborators)
+        self.conflicts = BaseConflicts(institutions, collaborators, DEBUG)
         self.conflicts.add_institution(affiliation)
         self.publications = []
         self.topics = topics
 
     @classmethod
     def from_hotcrp_csv(cls, line, insts):
-        (first, last, email, roles, tags, affiliation,
+        (idx, first, last, email, roles, tags, affiliation,
          collaborators, follow, *topics) = line
         return cls(first, last, email, tags, affiliation,
                    topics, insts, collaborators)
@@ -260,7 +313,7 @@ class PCMember(Person):
 
     def getPrettyName(self):
         return super().getTheirNames()
-        #return last
+        # return last
 
     def copy_no_conflicts(self):
         return PCMember(self.first, self.last, self.email,

@@ -34,15 +34,19 @@ def cleanup(filename):
     except:
         print('You need translation_dict.pkl in the cleanup.py directory.')
         # add some defaults
-        trans_dict = {"'": "" }
-    print(trans_dict)
+        trans_dict = {"'": ""}
     asciis = ascii_letters + ' .-'
+
     # DEFINE SPECIAL CHARS HERE
     legal_chars = asciis
+
     to_check = {}
     check_pc_names = {}
     check_collab_names = {}
+
+    # DEFINE REGEX HERE
     susp_1 = re.compile(".*,.*")
+    fan_yao = re.compile("(^[^0-9][A-Za-z ]*)(,)([A-Za-z ]*)\([^)]*\)")
 
     def isascii(s): return len(s) == len(s.encode())
     with open(filename, encoding='utf-8') as csvfile:
@@ -57,6 +61,17 @@ def cleanup(filename):
             non_ascii_list = []
             collaborators = pc['collaborators'].split('\n')
             i = 0
+            # hardcoded fixes
+            # Fan Yao fix
+            #if pc[''] == '76':
+            #    new_collaborators = []
+            #    for collab in collaborators:
+            #        res = fan_yao.match(collab)
+            #        name = res.group(1).strip().rstrip()
+            #        institute = res.group(2).strip().lstrip()
+            #        new_collaborators.append(name + " (" + institute + ")")
+            #    collaborators = new_collaborators
+
             for collab in collaborators:
                 # remove university
                 left_paren_loc = collab.find('(')
