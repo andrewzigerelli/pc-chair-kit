@@ -94,7 +94,9 @@ def search_dblp(title):
                 cache2[title] = resource
                 save_obj(cache2, 'cache2')
             return xmltodict.parse(resource)
-        except:
+        except Exception as e:
+            print(title)
+            print(e)
             if num_retries > 0:
                 print("Block from dblp, sleeping for 10s")
                 sleep(10)
@@ -103,6 +105,7 @@ def search_dblp(title):
                 return {}
 
     # woops we failed
+    #raise Exception("Should never get here!\n")
     return {}
 
 
@@ -134,8 +137,9 @@ def get_references(filename, pc_info):
                             full_try = full_title.sub(r"\g<2>", t)
                             title = full_try
                             resp = search_dblp(title)
-                            hits = resp['result']['hits']
-                            matches.extend(check_hits(hits, authors))
+                            if resp:
+                                hits = resp['result']['hits']
+                                matches.extend(check_hits(hits, authors))
                             # clear title and authors
                             authors = []
                             title = ''
@@ -146,8 +150,9 @@ def get_references(filename, pc_info):
                                 found_title = True
                                 isTitle = False
                                 resp = search_dblp(title)
-                                hits = resp['result']['hits']
-                                matches.extend(check_hits(hits, authors))
+                                if resp:
+                                    hits = resp['result']['hits']
+                                    matches.extend(check_hits(hits, authors))
                                 # clear title and authors
                                 authors = []
                                 title = ''
@@ -218,6 +223,7 @@ if __name__ == '__main__':
     parser.add_argument("--id_max", type=int,
                         default=1000,
                         help="max id for author id loop")
+
     args = parser.parse_args()
 
     # get pc_info
