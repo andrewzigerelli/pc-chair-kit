@@ -131,3 +131,18 @@ python3 institutions.py data/institutions.csv ttt.csv > replaceout
 ```
 Then look at replaceout to see what the script did. Correct what you think need corrected, in either ttt.csv or institutions.csv
 THIS OVERWRITES data/institutions.csv
+
+## NEW CITATION PARSER
+The old citation parser is shit, too many false positives.
+This new one is still shit, but a little better. Unless you are using this
+because you know me, just move on, because this is just hacked together. The
+logic is just a bunch of bandages put together when things broke. It's likely to
+still break.
+
+To use, you still need all the pdfs in the pdf folder, then convert them to text
+with wordscript *(requires pdftotext).
+
+```
+cd PDF_FOLDER
+python get_citations.py --pc_info ../micro2020-pcinfo-cleaned.csv --id_min ID_MIN --id_max ID_MAX
+```
