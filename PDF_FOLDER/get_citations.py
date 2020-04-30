@@ -103,7 +103,7 @@ def search_dblp(title):
                 return {}
 
     # woops we failed
-    raise Exception("Should never get here!\n")
+    return {}
 
 
 def get_references(filename, pc_info):
@@ -117,6 +117,7 @@ def get_references(filename, pc_info):
         txt = f.readlines()
         i = 0
         found_references = False  # just for log
+        found_title = False # just for log
         for line in txt:
             found = ref_string.match(line)
             found_references = bool(found_references) or found
@@ -129,6 +130,7 @@ def get_references(filename, pc_info):
                     # necessary cleanup
                     for t in tokens:
                         if full_title.match(t):
+                            found_title = True
                             full_try = full_title.sub(r"\g<2>", t)
                             title = full_try
                             resp = search_dblp(title)
@@ -141,6 +143,7 @@ def get_references(filename, pc_info):
                         if try_title:
                             if isTitle:
                                 title = title + t[:try_title.end()-1].strip()
+                                found_title = True
                                 isTitle = False
                                 resp = search_dblp(title)
                                 hits = resp['result']['hits']
@@ -173,9 +176,10 @@ def get_references(filename, pc_info):
                             if result > RATIO_MATCH:
                                 authors.append(pc_val)
             i += 1
-        print(found_references)
         if not found_references:
             log("Didn't find references in %s" % filename)
+        if not found_title:
+            log("Didn't find any titles in %s" % filename)
 
     # write info
     match_dict = {}
